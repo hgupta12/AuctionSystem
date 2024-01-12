@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Player 1",
+    "price": 100,
+    "status": null,
+    "owner": null
+  },
+  {
+    "id": 2,
+    "name": "Player 2",
+    "price": 200,
+    "status": null,
+    "owner": null
+  },
+  {
+    "id": 3,
+    "name": "Player 3",
+    "price": 100,
+    "status": null,
+    "owner": null
+  },
+  {
+    "id": 4,
+    "name": "Player 4",
+    "price": 200,
+    "status": null,
+    "owner": null
+  },
+  {
+    "id": 5,
+    "name": "Player 5",
+    "price": 100,
+    "status": null,
+    "owner": null
+  },
+  {
+    "id": 6,
+    "name": "Player 6",
+    "price": 200,
+    "status": null,
+    "owner": null
+  },
+  {
+    "id": 7,
+    "name": "Player 7",
+    "price": 100,
+    "status": null,
+    "owner": null
+  },
+  {
+    "id": 8,
+    "name": "Player 8",
+    "price": 200,
+    "status": null,
+    "owner": null
+  }
+]
