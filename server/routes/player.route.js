@@ -1,6 +1,6 @@
 const { Router } = require("express")
 const mongoose = require("mongoose")
-const Player = require("./db")
+const Player = require("../models/player.db")
 const PlayerRouter = Router()
 
 // Create
@@ -75,5 +75,6 @@ PlayerRouter.delete("/deletePlayer", async (req, res) => {
         res.status(500).json({ msg: "Oops!! Something is up with our server" })
     }
 })
+
 
 module.exports = PlayerRouter
