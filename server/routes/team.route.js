@@ -16,7 +16,7 @@ TeamRouter.get("/allteams", async (req, res) => {
 
 // Read a specific team
 TeamRouter.get("/getTeam", async (req, res) => {
-    const teamName = req.query.team
+    const teamName = req.body.team
     try {
         const team = await Team.findOne({ name: teamName });
         if (!team) res.status(404).json({ error: "Team not found" });
@@ -28,7 +28,7 @@ TeamRouter.get("/getTeam", async (req, res) => {
 
 // Create a team
 TeamRouter.post('/createTeam', async (req, res) => {
-    const teamName = req.query.team
+    const teamName = req.body.team
     try {
         const team = await Team.create({ name: teamName });
         res.status(200).json({ msg: "Team created successfully" });
@@ -39,8 +39,8 @@ TeamRouter.post('/createTeam', async (req, res) => {
 
 // Update a team i.e add a player to a team
 TeamRouter.post('/addPlayer', async (req, res) => {
-    const teamName = req.query.team
-    const playerName = req.query.name
+    const teamName = req.body.team
+    const playerName = req.body.name
     try {
         const player = await Player.findOne({ name: playerName });
         if (!player) {
