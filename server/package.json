@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
-    "start": "nodemon redis/message.js"
+    "start": "nodemon redis/message.js",
+    "lint:fix": "eslint --fix ./*.js"
   },
   "author": "",
   "license": "ISC",
