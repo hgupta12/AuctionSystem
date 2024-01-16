@@ -26,7 +26,17 @@ PlayerRouter.post("/addPlayer", async (req, res) => {
     }
 })
 
-// Read
+// Read all the players
+PlayerRouter.get("/allPlayers", async (req, res) => {
+    try {
+        const players = await Player.find()
+        res.status(200).json(players)
+    } catch (err) {
+        res.status(500).json({ error: "Some error, please try again" })
+    }
+})
+
+// Read a specific player
 PlayerRouter.get("/getPlayer", async (req, res) => {
     const { name } = req.body;
     try {

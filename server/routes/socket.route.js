@@ -5,7 +5,7 @@ const maxClients = 8
 let interested = []
 let responseCounter = 0
 
-const players = require('../players.json')
+const Players = require('../models/player.db')
 
 let curPlayer = 0
 
@@ -20,7 +20,7 @@ const socketRouter = (io) => {
       purse: startingPurse,
     });
 
-    // start the game if the number of clients reach the  required capacity
+    // start the game if the number of clients reach the required capacity
     if (clients.size === maxClients) {
       io.emit("startGame");
     }
@@ -30,14 +30,14 @@ const socketRouter = (io) => {
       // remove client
       clients.delete(socket.id);
       clientSockets.delete(socket.id);
-      console.log("\n\nClient disconnected");
+      console.log(`\n\nClient with sokcet id ${socket.id} disconnected`);
     });
 
-    // when the clients ar ready to play the game
+    // when the clients are ready to play the game
     socket.on("ready", () => {
       if (curPlayer == players.length) {
         console.log("\n\nNo more players - ending game!");
-        io.emit("game_over");
+        io.emit("GAME OVER"); 
         console.log(players);
         return;
       }
