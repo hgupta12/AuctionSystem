@@ -8,6 +8,7 @@ let responseCounter = 0
 let curPlayer = 0
 
 const players = require('../players.json')
+
 const redisClient = createClient({ legacyMode: true })
 async function connectRedis () {
   try {
@@ -90,7 +91,8 @@ const socketRouter = (io) => {
           const soldPlayer = {
             status: 'sold',
             player: players[curPlayer],
-            winner: interested[0]
+            winner: interested[0],
+            money: players[curPlayer].price
           }
           io.emit('player_over', soldPlayer)
           console.log('Player is getting sold')
@@ -129,7 +131,8 @@ const socketRouter = (io) => {
             const soldPlayer = {
               status: 'sold',
               player: players[curPlayer],
-              winner: firstBidder
+              winner: firstBidder,
+              money: players[curPlayer].price
             }
             console.log('Player is getting sold')
             io.emit('player_over', soldPlayer)
@@ -207,7 +210,8 @@ const socketRouter = (io) => {
           const soldPlayer = {
             status: 'sold',
             player: players[curPlayer],
-            winner: msg.currentHolder
+            winner: msg.currentHolder,
+            money: players[curPlayer].price
           }
           console.log('Player is getting sold')
           io.emit('player_over', soldPlayer)
