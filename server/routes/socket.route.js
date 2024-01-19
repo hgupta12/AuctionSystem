@@ -1,4 +1,5 @@
 const { createClient } = require('redis')
+const axios = require('axios')
 const clients = new Map()
 const clientSockets = new Map()
 const startingPurse = 1000
@@ -6,8 +7,24 @@ const maxClients = 8
 let interested = []
 let responseCounter = 0
 let curPlayer = 0
+const players = []
 
-const players = require('../players.json')
+async function getData ({ name }) {
+  try {
+    const response = await axios.get('http://localhost:4000/getPlayer', {
+      params: {
+        name
+      }
+    })
+    if (response.data) {
+      players.push(response.data)
+    }
+  } catch (error) {
+    console.error(`Error fetching player data: ${error}`)
+  }
+}
+
+getData({ name: 'Dhoni' })
 
 const redisClient = createClient({ legacyMode: true })
 async function connectRedis () {

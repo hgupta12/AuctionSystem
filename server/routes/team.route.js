@@ -15,7 +15,7 @@ TeamRouter.get('/allteams', async (req, res) => {
 
 // Read a specific team
 TeamRouter.get('/getTeam', async (req, res) => {
-  const teamName = req.body.team
+  const teamName = req.params.team
   try {
     const team = await Team.findOne({ name: teamName })
     if (!team) res.status(404).json({ error: 'Team not found' })

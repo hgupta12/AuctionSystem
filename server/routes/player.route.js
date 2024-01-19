@@ -38,12 +38,15 @@ PlayerRouter.get('/allPlayers', async (req, res) => {
 
 // Read a specific player
 PlayerRouter.get('/getPlayer', async (req, res) => {
-  const { name } = req.body
+  const { name } = req.query
+  console.log(name)
   try {
     const player = await Player.findOne({ name })
+    console.log(player)
     if (!player) res.status(404).json({ error: 'Player not found' })
     res.status(200).json(player)
   } catch (err) {
+    console.log(err)
     res.status(500).json({ error: 'Some error, please try again' })
   }
 })

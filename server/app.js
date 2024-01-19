@@ -7,9 +7,10 @@ const app = express()
 const PlayerRouter = require('./routes/player.route')
 const TeamRouter = require('./routes/team.route')
 const mongoose = require('mongoose')
+require('dotenv').config({ path: '../.env' })
 
-// For the http server
-mongoose.connect('mongodb://localhost:27017/auction')
+// Connect to the database
+mongoose.connect(`mongodb://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@localhost:27017/auction?authSource=admin`)
 
 app.use(bodyParser.json())
 app.use(cors())
