@@ -1,4 +1,4 @@
-const { createClient } = require('redis')
+const { redisClient } = require('../redis/db.js')
 const axios = require('axios')
 const clients = new Map()
 const clientSockets = new Map()
@@ -7,35 +7,34 @@ const maxClients = 8
 let interested = []
 let responseCounter = 0
 let curPlayer = 0
-const players = []
+const players = require('../players.json')
+// async function getData ({ name }) {
+//   try {
+//     const response = await axios.get('http://localhost:4000/getPlayer', {
+//       params: {
+//         name
+//       }
+//     })
+//     if (response.data) {
+//       players.push(response.data)
+//     }
+//   } catch (error) {
+//     console.error(`Error fetching player data: ${error}`)
+//   }
+// }
 
-async function getData ({ name }) {
-  try {
-    const response = await axios.get('http://localhost:4000/getPlayer', {
-      params: {
-        name
-      }
-    })
-    if (response.data) {
-      players.push(response.data)
-    }
-  } catch (error) {
-    console.error(`Error fetching player data: ${error}`)
-  }
-}
+// getData({ name: 'Dhoni' })
 
-getData({ name: 'Dhoni' })
+// const redisClient = createClient({ legacyMode: true })
+// async function connectRedis () {
+//   try {
+//     await redisClient.connect()
+//   } catch (err) {
+//     console.log('Error connecting to Redis:', err)
+//   }
+// }
 
-const redisClient = createClient({ legacyMode: true })
-async function connectRedis () {
-  try {
-    await redisClient.connect()
-  } catch (err) {
-    console.log('Error connecting to Redis:', err)
-  }
-}
-
-connectRedis()
+// connectRedis()
 
 const socketRouter = (io) => {
   io.on('connection', (socket) => {

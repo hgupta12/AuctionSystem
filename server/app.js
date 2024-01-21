@@ -10,7 +10,7 @@ const mongoose = require('mongoose')
 require('dotenv').config({ path: '../.env' })
 
 // Connect to the database
-mongoose.connect(`mongodb://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@localhost:27017/auction?authSource=admin`)
+mongoose.connect(`mongodb://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@localhost:27017/auction?authSource=admin&directConnection=true`)
 
 app.use(bodyParser.json())
 app.use(cors())
