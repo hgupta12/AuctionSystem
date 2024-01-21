@@ -1,4 +1,5 @@
 const { redisClient } = require('../redis/db.js')
+const { sendMessage } = require('../kafka/producer.js')
 const axios = require('axios')
 const clients = new Map()
 const clientSockets = new Map()
@@ -46,10 +47,12 @@ const socketRouter = (io) => {
       id: socket.id,
       purse: startingPurse
     })
+    sendMessage('auction', { id: socket.id, purse: startingPurse })
 
     // start the game if the number of clients reach the required capacity
     if (clients.size === maxClients) {
       io.emit('startGame')
+      sendMessage('auction', { msg: 'Game started' })
     }
 
     // when a client disconnects
@@ -58,6 +61,7 @@ const socketRouter = (io) => {
       clients.delete(socket.id)
       clientSockets.delete(socket.id)
       console.log(`\n\nClient with sokcet id ${socket.id} disconnected`)
+      sendMessage('auction', { id: socket.id, msg: 'disconnected' })
     })
 
     // when the clients are ready to play the game
@@ -65,11 +69,13 @@ const socketRouter = (io) => {
       if (curPlayer === players.length) {
         console.log('\n\nNo more players - ending game!')
         io.emit('GAME OVER')
+        sendMessage('auction', { msg: 'Game over' })
         console.log(players)
         return
       }
       console.log(`Sending new player info. - ${curPlayer}`)
       socket.emit('new_player', players[curPlayer])
+      sendMessage('auction', { msg: 'New player', player: players[curPlayer] })
     })
 
     // 1st bid for a player
@@ -83,10 +89,12 @@ const socketRouter = (io) => {
         // if no one is interested, mark player as unsold and move to next player
         if (interested.length === 0) {
           // mark player as unsold and move to next player
-          io.emit('player_over', {
+          const unsoldPlayer = {
             status: 'unsold',
             player: players[curPlayer]
-          })
+          }
+          io.emit('player_over', unsoldPlayer)
+          sendMessage('auction', { msg: 'Player unsold', unsoldPlayer })
           console.log(`\n\nNo bids - player${curPlayer} unsold`)
           players[curPlayer].status = 'unsold'
           curPlayer++
@@ -114,6 +122,7 @@ const socketRouter = (io) => {
           console.log('Player is getting sold')
           const key = Date.now()
           redisClient.set(key, JSON.stringify(soldPlayer))
+          sendMessage('auction', { msg: 'Player sold', soldPlayer })
           curPlayer++
         } else { // more than one person is interested
           // choose the first bidder randomly. He gets the base price.
@@ -154,6 +163,7 @@ const socketRouter = (io) => {
             io.emit('player_over', soldPlayer)
             const key = Date.now()
             redisClient.set(key, JSON.stringify(soldPlayer))
+            sendMessage('auction', { msg: 'Player sold', soldPlayer })
             curPlayer++
           } else { // choose the second bidder. the second bidder bids the next price and the first bidder is prompted for the next price.
             const random2 = Math.floor(Math.random() * interested.length)
@@ -166,12 +176,14 @@ const socketRouter = (io) => {
                 players[curPlayer].price + 100
               }`
             )
-            io.emit('bid', {
+            const increaseBidPlayer = {
               player: players[curPlayer],
               currentHolder: secondBidder,
               bidder: firstBidder,
               price: players[curPlayer].price + 100
-            })
+            }
+            io.emit('bid', increaseBidPlayer)
+            sendMessage('auction', { msg: 'Bidding increase', increaseBidPlayer })
           }
         }
         responseCounter = 0
@@ -184,21 +196,25 @@ const socketRouter = (io) => {
         console.log(
           `${socket.id} - bids on player ${curPlayer} for ${msg.price}`
         )
-        io.emit('bid', {
+        const bidPlayer = {
           player: players[curPlayer],
           currentHolder: msg.currentHolder,
           bidder: msg.bidder,
           price: msg.price
-        })
+        }
+        io.emit('bid', bidPlayer)
+        sendMessage('auction', { msg: 'Bidding increase', bidPlayer })
       } else {
         // take in more bids
         console.log(`${msg.bidder} - backs out`)
         console.log('New Bids Requested')
-        io.emit('new_bid_request', {
+        const newPlayer = {
           player: players[curPlayer],
           currentHolder: msg.currentHolder,
           price: msg.price
-        })
+        }
+        io.emit('new_bid_request', newPlayer)
+        sendMessage('auction', { msg: 'New bid request', newPlayer })
       }
     })
 
@@ -233,6 +249,7 @@ const socketRouter = (io) => {
           io.emit('player_over', soldPlayer)
           const key = Date.now()
           redisClient.set(key, JSON.stringify(soldPlayer))
+          sendMessage('auction', { msg: 'Player sold', soldPlayer })
           curPlayer++
           responseCounter = 0
           // empty interested array
@@ -245,12 +262,14 @@ const socketRouter = (io) => {
               msg.price + 100
             } \n\n`
           )
-          io.emit('bid', {
+          const increaseBidPlayer = {
             player: players[curPlayer],
             currentHolder: interested[random1],
             bidder: msg.currentHolder,
             price: msg.price + 100
-          })
+          }
+          io.emit('bid', increaseBidPlayer)
+          sendMessage('auction', { msg: 'Bidding increase', increaseBidPlayer })
           interested.length = 0
           responseCounter = 0
         }
