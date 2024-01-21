@@ -4,8 +4,9 @@ const http = require('http')
 const socketIO = require('socket.io')
 const cors = require('cors')
 const app = express()
-const PlayerRouter = require('./routes/player.route')
-const TeamRouter = require('./routes/team.route')
+const PlayerRouter = require('./routes/http-routes/player.route')
+const TeamRouter = require('./routes/http-routes/team.route')
+const replayRouter = require('./routes/http-routes/replay.route')
 const mongoose = require('mongoose')
 require('dotenv').config({ path: '../.env' })
 
@@ -17,6 +18,7 @@ app.use(cors())
 
 app.use('/', PlayerRouter)
 app.use('/teams', TeamRouter)
+app.use('/replay', replayRouter)
 
 // For the websocket server
 const server = http.createServer(app)

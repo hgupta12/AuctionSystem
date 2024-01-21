@@ -1,6 +1,6 @@
 const { Router } = require('express')
-const Player = require('../models/player.db')
-const Team = require('../models/team.db')
+const Player = require('../../models/player.db')
+const Team = require('../../models/team.db')
 const TeamRouter = Router()
 
 // Read all the teams

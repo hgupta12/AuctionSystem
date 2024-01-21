@@ -1,4 +1,4 @@
-const { redisClient } = require('../redis/db.js')
+const { redisClient } = require('../redis/cache.js')
 const { sendMessage } = require('../kafka/producer.js')
 const axios = require('axios')
 const clients = new Map()

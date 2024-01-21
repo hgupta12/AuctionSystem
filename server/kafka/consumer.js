@@ -4,7 +4,7 @@ const Team = require('../models/team.db')
 
 const consumer = new kafka.Consumer(
   client,
-  [{ topic: 'first_bid', partition: 0 }],
+  [{ topic: 'auction', partition: 0 }],
   { autoCommit: true }
 )
 
