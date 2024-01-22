@@ -2,8 +2,8 @@ import logo from "../../assets/ipllogo.png"
 
 export default function Navbar () {
     return (
-        <div className="bg-white fixed top-0 left-0 h-svh p-20">
-            <img src={logo} alt="" className="w-40" />
+        <div className="bg-white fixed top-0 left-0 h-svh p-16">
+            <img src={logo} alt="" className="w-32" />
             <h1 className="text-yellow-400 font-bold text-center">AUCTIONS 2018</h1>
 
             <div className="absolute bottom-0 left-0 w-full">
