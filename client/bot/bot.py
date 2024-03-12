@@ -339,6 +339,10 @@ class Bot():
                                                        player_obj.rating, 
                                                        self.team.budget)
             
+            #If you don't have money, then don't bid
+            if self.team.budget < player_json_object["current_price"]/100:
+                optimal_action = "not_bid"
+            
             self._record_episode_step(current_state, optimal_action, step_reward_function()) #The reward is 0 since that calculation hasn't been done yet CHANGE!!
             
             return optimal_action

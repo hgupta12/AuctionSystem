@@ -9,7 +9,7 @@ players_data = [
         "current_price": 0,
         "state": 0,
     }
-    for i in range(20)
+    for i in range(30)
 ]
 
 # Ensure that the indices are in increasing order
@@ -23,12 +23,15 @@ for player in players_data:
 
 from bot import Bot
 
-bot = Bot(initial_budget=10) #This is in cr
+bot = Bot(initial_budget=15) #This is in cr
 
 for epoch in range(10):
     for player_json_obj in players_data:
-        
         #This is what you do in one episode
+        
+        #Initally set the default value to introduce the player
+        player_json_obj["state"] = 0
+        
         print(player_json_obj)
         print()
         print(bot.get_optimal_action(player_json_obj))
@@ -52,7 +55,7 @@ for epoch in range(10):
             action = bot.get_optimal_action(player_json_obj)
             print(f"Step {step}: {action}")
         
-        if player_json_obj["current_price"] > bot.team.budget*100: #If more than purse, don't give
+        if player_json_obj["current_price"] > int(bot.team.budget*100): #If more than purse, don't give
             player_json_obj["state"] = 2
         else:
             if random.random() > 0.5:
