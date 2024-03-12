@@ -147,7 +147,7 @@ class SAManager():
         """
         
         state = self.get_state(current_bid_price, current_team_rating, current_player_rating, current_budget, "bid")[:-1] #We don't need the action here
-        print(f"State: {state}")
+
         optimal_action_index = np.argmax(self.Q[*state,:])
         
         return (state, self.available_actions[optimal_action_index])
@@ -163,7 +163,7 @@ class SAManager():
         self.N[*state,action] += 1
 
 class Player():
-    def __init__(self, rating, role, index):
+    def __init__(self, rating, role, index, base_price=None, final_price=None):
         """
         Parameters:
         rating: The rating of the player
@@ -174,6 +174,12 @@ class Player():
         self.rating = rating
         self.role = role
         self.index = index
+        
+        if base_price is not None:
+            self.base_price = base_price
+        
+        if final_price is not None:
+            self.final_price = final_price
 
 class Team():
     def __init__(self, initial_budget):
@@ -220,6 +226,7 @@ class Bot():
         self.mode = "running" # running is for taking it through the auction, training is for between the episodes
         
         self.team = Team(initial_budget)
+        self.initial_budget = initial_budget
         
         self.sar_sequence = []
         
@@ -261,11 +268,13 @@ class Bot():
 
             self._sa_manager.Q[*state_t,action_t] = oldQ + self.alpha * (G - oldQ) / self._sa_manager.N[*state_t,action_t] 
     
-    def print_team_and_budget(self):
+    def result(self):
+        print()
+        print("Initial Budget: ", self.initial_budget, "cr")
         print("Remaining Purse: ", self.team.budget, "cr")
         print("The final team is:")
         for player in self.team.players:
-            print(f"Player {player.index}: ", player.role, player.rating)
+            print(f"Player {player.index}: {player.role} rated at {player.rating} initially costing {player.base_price}L bought at {player.final_price}L")
     
     def get_optimal_action(self,player_json_object):
         """
@@ -325,14 +334,16 @@ class Bot():
             
         else:
             # Auction Ends
-            player_obj = Player(player_json_object["rating"], player_json_object["role"], player_json_object["index"])
+            final_price = player_json_object["current_price"]
+            
+            base_price = player_json_object["base_price"]
+            
+            player_obj = Player(player_json_object["rating"], player_json_object["role"], player_json_object["index"],base_price=base_price,final_price=final_price)
             
             current_state, _ = self._sa_manager.get_optimal_action(player_json_object["current_price"],
                                                        self.team.get_team_rating(), 
                                                        player_obj.rating, 
                                                        self.team.budget)
-            
-            final_price = player_json_object["current_price"]
             
             if player_json_object["state"] == 2:
                 #Not awarded to us

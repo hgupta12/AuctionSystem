@@ -23,7 +23,7 @@ for player in players_data:
 
 from bot import Bot
 
-bot = Bot(initial_budget=10) #This is in cr
+bot = Bot(initial_budget=30) #This is in cr
 
 for player_json_obj in players_data:
     
@@ -58,6 +58,7 @@ for player_json_obj in players_data:
             player_json_obj["state"] = 3
         
     action = bot.get_optimal_action(player_json_obj)
-    print(action)
+    if action is not None:
+        print(action)
     
-bot.print_team_and_budget()
+bot.result()
