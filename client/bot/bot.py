@@ -66,7 +66,7 @@ class SAManager():
         no_budget_ranges = len(budget_ranges)
         no_available_actions = len(available_actions)
         
-        self.Q = np.random.rand((no_bidding_ranges, no_team_rating_ranges, no_player_rating_ranges, no_budget_ranges, no_available_actions))
+        self.Q = np.random.rand(no_bidding_ranges, no_team_rating_ranges, no_player_rating_ranges, no_budget_ranges, no_available_actions)
         
         self.N = np.ones((no_bidding_ranges, no_team_rating_ranges, no_player_rating_ranges, no_budget_ranges, no_available_actions))
         
@@ -89,12 +89,12 @@ class SAManager():
                 break
             
         for team_rating_range in self.team_rating_ranges:
-            if int(team_rating_range) == current_team_rating:
+            if int(team_rating_range) == int(current_team_rating):
                 current_team_rating = self.team_rating_ranges.index(team_rating_range)
                 break
             
         for player_rating_range in self.player_rating_ranges:
-            if int(player_rating_range) == current_player_rating:
+            if int(player_rating_range) == int(current_player_rating):
                 current_player_rating = self.player_rating_ranges.index(player_rating_range)
                 break
             
@@ -141,7 +141,7 @@ class SAManager():
         
         state = self.get_state(current_bid_price, current_team_rating, current_player_rating, current_budget, "bid")[:-1] #We don't need the action here
         
-        optimal_action_index = np.argmax(self.Q[current_bid_price, current_team_rating, current_player_rating, current_budget,:])
+        optimal_action_index = np.argmax(self.Q[*state,:])
         
         return (state, self.available_actions[optimal_action_index])
     
@@ -215,6 +215,8 @@ class Bot():
         self.team = Team(initial_budget)
         
         self.sar_sequence = []
+        
+        self._initialize_state_dict()
         
         #Hyperparameters
         self.alpha = 0.02
