@@ -13,6 +13,8 @@ Since we are dealing with action-value pairs, we will have the four ranges and t
 
 Can include:
 - Terminal states
+
+NOTE: Up to the backend not to give the player if enough purse not there
 """
 
 def episodic_reward_function(team, player, final_price, received):
@@ -107,6 +109,11 @@ class SAManager():
             action = 0
         elif action == "not_bid":
             action = 1
+            
+        if current_budget < 0:
+            #   If you don't have money then you can't bid
+            current_budget = 0
+            action = "not_bid"
             
         return (current_bid_price, current_team_rating, current_player_rating, current_budget, action)
         
