@@ -189,6 +189,10 @@ class Team():
         self.players = []
         self.budget = initial_budget
         
+    def empty(self,initial_budget):
+        self.players = []
+        self.budget = initial_budget
+        
     def add_player(self, player_object):
         """
         Parameters:
@@ -267,6 +271,13 @@ class Bot():
             oldQ = self._sa_manager.Q[*state_t,action_t]
 
             self._sa_manager.Q[*state_t,action_t] = oldQ + self.alpha * (G - oldQ) / self._sa_manager.N[*state_t,action_t] 
+    
+    def reset(self):
+        """
+        This function is called once the episode ends to reset the team and the SAR sequence
+        """
+        self.sar_sequence = []
+        self.team.empty(self.initial_budget)
     
     def result(self):
         print()

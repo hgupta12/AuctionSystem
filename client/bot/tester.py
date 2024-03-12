@@ -9,7 +9,7 @@ players_data = [
         "current_price": 0,
         "state": 0,
     }
-    for i in range(50)
+    for i in range(20)
 ]
 
 # Ensure that the indices are in increasing order
@@ -23,42 +23,46 @@ for player in players_data:
 
 from bot import Bot
 
-bot = Bot(initial_budget=30) #This is in cr
+bot = Bot(initial_budget=10) #This is in cr
 
-for player_json_obj in players_data:
-    
-    #This is what you do in one episode
-    print(player_json_obj)
-    print()
-    print(bot.get_optimal_action(player_json_obj))
-    
-    player_json_obj["state"] = 1
-    
-    step = 0
-    
-    while step < 10:
-        #Updates
-        step += 1
+for epoch in range(10):
+    for player_json_obj in players_data:
         
-        player_json_obj["current_price"] += random.randint(0, 10)
-        
+        #This is what you do in one episode
         print(player_json_obj)
         print()
+        print(bot.get_optimal_action(player_json_obj))
         
-        #Action taking
-        action = bot.get_optimal_action(player_json_obj)
-        print(f"Step {step}: {action}")
-    
-    if player_json_obj["current_price"] > bot.team.budget*100: #If more than purse, don't give
-        player_json_obj["state"] = 2
-    else:
-        if random.random() > 0.5:
+        #Initally at the start of the epoch
+        player_json_obj["state"] = 1
+        player_json_obj["current_price"] = player_json_obj["base_price"]
+        
+        step = 0
+        
+        while step < 10:
+            #Updates
+            step += 1
+            
+            player_json_obj["current_price"] += random.randint(0, 10)
+            
+            print(player_json_obj)
+            print()
+            
+            #Action taking
+            action = bot.get_optimal_action(player_json_obj)
+            print(f"Step {step}: {action}")
+        
+        if player_json_obj["current_price"] > bot.team.budget*100: #If more than purse, don't give
             player_json_obj["state"] = 2
         else:
-            player_json_obj["state"] = 3
-        
-    action = bot.get_optimal_action(player_json_obj)
-    if action is not None:
-        print(action)
-    
-bot.result()
+            if random.random() > 0.5:
+                player_json_obj["state"] = 2
+            else:
+                player_json_obj["state"] = 3
+            
+        action = bot.get_optimal_action(player_json_obj)
+        if action is not None:
+            print(action)
+            
+    bot.result()
+    bot.reset()
