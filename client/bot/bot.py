@@ -261,6 +261,12 @@ class Bot():
 
             self._sa_manager.Q[*state_t,action_t] = oldQ + self.alpha * (G - oldQ) / self._sa_manager.N[*state_t,action_t] 
     
+    def print_team_and_budget(self):
+        print("Remaining Purse: ", self.team.budget, "cr")
+        print("The final team is:")
+        for player in self.team.players:
+            print(f"Player {player.index}: ", player.role, player.rating)
+    
     def get_optimal_action(self,player_json_object):
         """
         Parameters:
@@ -286,7 +292,6 @@ class Bot():
             
             #Add player
             new_player = Player(player_json_object["rating"], player_json_object["role"], player_json_object["index"])
-            self.team.add_player(new_player)
             
             #Change the mode of the Bot to running
             self.mode = "running"

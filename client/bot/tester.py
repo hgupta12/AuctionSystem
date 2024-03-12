@@ -49,10 +49,15 @@ for player_json_obj in players_data:
         action = bot.get_optimal_action(player_json_obj)
         print(f"Step {step}: {action}")
     
-    if random.random() > 0.5 and player_json_obj["current_price"] > bot.team.budget*100: #If more than purse, don't give
+    if player_json_obj["current_price"] > bot.team.budget*100: #If more than purse, don't give
         player_json_obj["state"] = 2
     else:
-        player_json_obj["state"] = 3
+        if random.random() > 0.5:
+            player_json_obj["state"] = 2
+        else:
+            player_json_obj["state"] = 3
         
     action = bot.get_optimal_action(player_json_obj)
     print(action)
+    
+bot.print_team_and_budget()
