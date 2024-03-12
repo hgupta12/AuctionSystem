@@ -140,7 +140,7 @@ class SAManager():
         """
         
         state = self.get_state(current_bid_price, current_team_rating, current_player_rating, current_budget, "bid")[:-1] #We don't need the action here
-        
+        print(f"State: {state}")
         optimal_action_index = np.argmax(self.Q[*state,:])
         
         return (state, self.available_actions[optimal_action_index])
@@ -153,7 +153,7 @@ class SAManager():
         action: The action for which the N value is to be incremented
         """
         
-        self.N[state,action] += 1
+        self.N[*state,action] += 1
 
 class Player():
     def __init__(self, rating, role, index):
@@ -250,9 +250,9 @@ class Bot():
             
             G = self.gamma * G + reward_t
             self._sa_manager.increment_n(state_t,action_t)
-            oldQ = self._sa_manager.Q[state_t,action_t]
+            oldQ = self._sa_manager.Q[*state_t,action_t]
 
-            self._sa_manager.Q[state_t,action_t] = oldQ + self.alpha * (G - oldQ) / self._sa_manager.N[state_t,action_t] 
+            self._sa_manager.Q[*state_t,action_t] = oldQ + self.alpha * (G - oldQ) / self._sa_manager.N[*state_t,action_t] 
     
     def get_optimal_action(self,player_json_object):
         """
@@ -326,7 +326,7 @@ class Bot():
                 #Not awarded to us
                 reward = episodic_reward_function(self.team, player_obj, final_price, False)
                 
-                self._record_episode_step(current_state, optimal_action, reward)
+                self._record_episode_step(current_state, "not_bid", reward) #This not bid part is by virtue of not taking player
             else:
                 #Awarded to us                
                 
@@ -334,12 +334,12 @@ class Bot():
                 reward = episodic_reward_function(self.team, player_obj, final_price, True)
                 
                 #Change budget
-                self.team.budget -= player_json_object["current_price"]
+                self.team.budget -= player_json_object["current_price"]/100
                 
                 #Add player to team
                 self.team.add_player(player_obj)
                 
-                self._record_episode_step(current_state, optimal_action, reward)
+                self._record_episode_step(current_state, "bid", reward) #Terminates with BID CHANGEEEE!!!
 
             #Change the mode to training, since Monte-Carlo
             self.mode = "training"
