@@ -3,7 +3,7 @@
 The following events are used to communicate between the socket server and socket client to conduct the auction.
 
 A `Player` object is used in several event messages. It has the following shape:
-```json
+```js
 {
     "id": number, // the id of the player up for auction
     "name": string, // name of the player
@@ -18,7 +18,7 @@ A `Player` object is used in several event messages. It has the following shape:
 ### clientID
 - Triggered immediately on connection
 - Contains:
-```json
+```js
 {
     "id": string, // client ID,
     "purse": number // the amount of money allotted to the team
@@ -43,7 +43,7 @@ A `Player` object is used in several event messages. It has the following shape:
 - Triggered when the auction for a specific player is complete
 - If only one team was interested in a player, they automatically get the player without entering the two-team bidding stage
 - Contains:
-```json
+```js
 {
     "status": string, // representing result of the bidding for the specific player,
     "player": Player, // player info
