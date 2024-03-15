@@ -89,6 +89,7 @@ const socketRouter = (io) => {
         // if no one is interested, mark player as unsold and move to next player
         if (interested.length === 0) {
           // mark player as unsold and move to next player
+          players[curPlayer].status = 'unsold'
           const unsoldPlayer = {
             status: 'unsold',
             player: players[curPlayer]
@@ -96,7 +97,6 @@ const socketRouter = (io) => {
           io.emit('player_over', unsoldPlayer)
           sendMessage('auction', { msg: 'Player unsold', unsoldPlayer })
           console.log(`\n\nNo bids - player${curPlayer} unsold`)
-          players[curPlayer].status = 'unsold'
           curPlayer++
         } else if (interested.length === 1) { // if only one person is interested, mark player as sold and move to next player
           // mark player as sold and move to next player
