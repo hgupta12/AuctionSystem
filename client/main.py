@@ -2,6 +2,15 @@ import socketio
 import random
 import time
 
+"""
+API endpoints:
+1) create_bot -> initialize the bot instance at the very start of the training, with an initial budget
+2) new_player -> tell the bot that a new player is up for auction -> Bot returns bid or not bid
+3) bid_process -> tell the bot, about the player with updated price -> Bot returns bid or not bid
+4) end_bid -> tell the bot, if they have got the player or not with the price
+5) end_epoch -> tell the bot to reset it's team, because one epoch of training is over
+"""
+
 # Create a Socket.IO client instance
 sio = socketio.Client()
 client = ""

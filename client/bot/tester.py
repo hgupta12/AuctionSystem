@@ -23,13 +23,13 @@ for player in players_data:
 
 from bot import Bot
 
-bot = Bot(initial_budget=15) #This is in cr
+bot = Bot(initial_budget=15) #This is in cr -> create_bot in socket
 
-for epoch in range(10):
+for epoch in range(1000):
     for player_json_obj in players_data:
         #This is what you do in one episode
         
-        #Initally set the default value to introduce the player
+        #Initally set the default value to introduce the player -> new_player in socket
         player_json_obj["state"] = 0
         
         print(player_json_obj)
@@ -43,6 +43,7 @@ for epoch in range(10):
         step = 0
         
         while step < 10:
+            # bid_process in socket
             #Updates
             step += 1
             
