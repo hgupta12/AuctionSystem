@@ -1,9 +1,9 @@
 interface Args {
-    name: String;
+    name: string;
     image: string;
-    amount: String;
+    amount: string;
     type: "bid" | "base" | "rtm" | "sold";
-    team?: String;
+    team?: string;
 }
 
 export default function ActivityCard ({ name, amount, type, team = "", image } : Args) {
