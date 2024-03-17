@@ -35,3 +35,7 @@ git clone https://github.com/hgupta12/AuctionSystem.git
 2. [Python version >= 3.7](https://www.python.org/downloads/)
 2. [Node.js](https://nodejs.org/en/download/)
 
+## TO-DO
+- Client-side consumption of server-side events
+- Consume the player sold from redis in the front-end
+- Obtain current price from the server
