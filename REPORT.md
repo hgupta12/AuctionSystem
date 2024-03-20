@@ -32,18 +32,19 @@ The overall **MDP** is visually represented as the below cycle-diagram:
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*ywOrdJAHgSL5RP-AuxsfJQ.png" alt="MDP" align="center"/>
 </div>
 
-Once the 4-tuple(S, A~s~, P~a~ , R~a~) is setup for a problem, our objective is to maximize the expected reward that is obtained in a run-through of the problem. In classical RL, this is done by estimating the *values* of state-action (s, a) pairs, denoted Q(s, a). Formally, Q is the expected discounted reward obtained in a single iteration of the problem (an *episode*). This is aptly formulated as follows:
+Once the 4-tuple(S, A<sub>s</sub>, P<sub>a</sub> , R<sub>a</sub>) is setup for a problem, our objective is to maximize the expected reward that is obtained in a run-through of the problem. In classical RL, this is done by estimating the *values* of state-action (s, a) pairs, denoted Q(s, a). Formally, Q is the expected discounted reward obtained in a single iteration of the problem (an *episode*). This is aptly formulated as follows:
 
-Q<sup>$\pi$</sup>(s, a) = **E**<sub>$\pi$</sub> [ $\sum_{k=0}^{\infty}$ $\gamma$<sup>k</sup> r<sub>t+k+1</sub> | s<sub>t</sub> = s, a<sub>t</sub> = a ]  
+Q<sup>π</sup>(s, a) = **E**<sub>π</sub> [ ∑<sub>k=0</sub><sup>∞</sup> γ<sup>k</sup> r<sub>t+k+1</sub> | s<sub>t</sub> = s, a<sub>t</sub> = a ]
 
 In the literature, optimal values for Q(s, a) are obtained using the Bellman equation:
-	Q<sup>*</sup>(s, a) = R(s, a) + $\gamma$ $\sum$<sub>s'$\epsilon$ S</sub> P~ss'~(a) $\max$<sub>a' $\epsilon$ A(s')</sub> Q<sup>*</sup>(s', a')
+
+Q*\(s, a) = R(s, a) + γ ∑<sub>s' ∈ S</sub> P<sub>ss'</sub>(a) max<sub>a' ∈ A(s')</sub> Q*\(s', a')
 
 Also, based on these optimal Q<sup>*</sup>(s,a) values, a policy $\pi$ is determined as follows:
 
  $\pi$<sup>*</sup>(s) = $\arg\max_a$ q<sup>$\pi$</sup>(s,a)
 
-In reality, we would never have access to <sub>P~ss'</sub>, since this is an intrinsic property of the environment, which is likely only partially/never revealed. In addition, the above optimal solution is only exactly attainable, in the limit of infinity. Hence, we turn to some of the existing value-based approximation algorithms, to achieve reasonable optimality, in finite time.
+In reality, we would never have access to <sub>Pss'</sub>, since this is an intrinsic property of the environment, which is likely only partially/never revealed. In addition, the above optimal solution is only exactly attainable, in the limit of infinity. Hence, we turn to some of the existing value-based approximation algorithms, to achieve reasonable optimality, in finite time.
 
 ### Monte-Carlo RL
 Monte-Carlo (*MC*) for Reinforcement Learning is an important value-based model free algorithm, whose specialty lies in the fact that the Q-values are updated at the end of an *episode*. This way, equation (FILL WITH EQU) is as closely emulated is possible. Furthermore, one immediate advantage of *MC* is that it can distribute the discounted reward to all the states that occur in an episode. This is particularly useful in scarce-reward scenarios (when the reward is just 0/1), or when the reward is given at the end of the episode (ex: 0 or 1 for losing or winning a round of Blackjack). An overall view of the algorithm is shown below:
