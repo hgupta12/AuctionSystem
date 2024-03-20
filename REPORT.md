@@ -22,10 +22,10 @@ In the mini-auction, teams have an already semi-built team, and try to gain a fe
 In classical RL, the major mathematical modelling is based on a *Markov Decision Process* (**MDP**). Formally, an MDP is a 4-tuple(S, A~s~, P~a~ , R~a~), wherein:
 - S is set of all possible states. 
 (typical terminology: s - current states, s' - next state)
-- A~s~ is the set of all actions possible from the current state s $\epsilon$ S.
+- A<sub>s</sub> is the set of all actions possible from the current state s $\epsilon$ S.
 (typical terminology: s - current action, s' - next action)
-- P~a~ is the probability distribution function (involves s and s'), which shows *Pr of landing in s', having been in s and committing a*.
-- R~a~ is the reward function (involves s and s'), which returns *Reward received from the environment for landing in s', having been in s and committing a*.
+- P<sub>a</sub> is the probability distribution function (involves s and s'), which shows *Pr of landing in s', having been in s and committing a*.
+- R<sub>a</sub> is the reward function (involves s and s'), which returns *Reward received from the environment for landing in s', having been in s and committing a*.
 The overall **MDP** is visually represented as the below cycle-diagram:
 
 <div align="center">
@@ -34,16 +34,16 @@ The overall **MDP** is visually represented as the below cycle-diagram:
 
 Once the 4-tuple(S, A~s~, P~a~ , R~a~) is setup for a problem, our objective is to maximize the expected reward that is obtained in a run-through of the problem. In classical RL, this is done by estimating the *values* of state-action (s, a) pairs, denoted Q(s, a). Formally, Q is the expected discounted reward obtained in a single iteration of the problem (an *episode*). This is aptly formulated as follows:
 
-Q<sup>$\pi$</sup>(s, a) = **E**<sub>$\pi$</sub> [ $\sum_{k=0}^{\infty}$ $\gamma$^k^ r~t+k+1~ | s~t~ = s, a~t~ = a ]  
+Q<sup>$\pi$</sup>(s, a) = **E**<sub>$\pi$</sub> [ $\sum_{k=0}^{\infty}$ $\gamma$<sup>k</sup> r<sub>t+k+1</sub> | s<sub>t</sub> = s, a<sub>t</sub> = a ]  
 
 In the literature, optimal values for Q(s, a) are obtained using the Bellman equation:
-	Q^*^(s, a) = R(s, a) + $\gamma$ $\sum$ <sub>s'$\epsilon$ S</sub> P~ss'~(a) $\max_{a' \epsilon A(s')}$ Q^*^(s', a')
+	Q<sup>*</sup>(s, a) = R(s, a) + $\gamma$ $\sum$<sub>s'$\epsilon$ S</sub> P~ss'~(a) $\max$<sub>a' $\epsilon$ A(s')</sub> Q<sup>*</sup>(s', a')
 
-Also, based on these optimal Q^*^(s,a) values, a policy $\pi$ is determined as follows:
+Also, based on these optimal Q<sup>*</sup>(s,a) values, a policy $\pi$ is determined as follows:
 
- $\pi$^*^(s) = $\arg\max_a$ q<sup>$\pi$</sup>(s,a) 	
+ $\pi$<sup>*</sup>(s) = $\arg\max_a$ q<sup>$\pi$</sup>(s,a)
 
-In reality, we would never have access to P~ss'~, since this is an intrinsic property of the environment, which is likely only partially/never revealed. In addition, the above optimal solution is only exactly attainable, in the limit of infinity. Hence, we turn to some of the existing value-based approximation algorithms, to achieve reasonable optimality, in finite time. 
+In reality, we would never have access to <sub>P~ss'</sub>, since this is an intrinsic property of the environment, which is likely only partially/never revealed. In addition, the above optimal solution is only exactly attainable, in the limit of infinity. Hence, we turn to some of the existing value-based approximation algorithms, to achieve reasonable optimality, in finite time.
 
 ### Monte-Carlo RL
 Monte-Carlo (*MC*) for Reinforcement Learning is an important value-based model free algorithm, whose specialty lies in the fact that the Q-values are updated at the end of an *episode*. This way, equation (FILL WITH EQU) is as closely emulated is possible. Furthermore, one immediate advantage of *MC* is that it can distribute the discounted reward to all the states that occur in an episode. This is particularly useful in scarce-reward scenarios (when the reward is just 0/1), or when the reward is given at the end of the episode (ex: 0 or 1 for losing or winning a round of Blackjack). An overall view of the algorithm is shown below:
@@ -61,10 +61,10 @@ To see an example tutorial of implementing the above algorithm in a Gymnasium en
 ### Any Simulator-Specific Prereq?
 
 ## Methodology
-(*TODO: Vishy + Hariharan + Menors? will do this*)
+(*TODO: V + H + Men? will do this*)
 ## Results
 (*TODO: Based on actual running of the simulator; we'll include photos of the sim in action*)
 ## Conclusions
 (*TODO: I dunno*)
 ## References
-(*TODO: Vishy will do this*)
+(*TODO: V will do this*)
