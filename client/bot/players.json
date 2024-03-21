@@ -1,838 +1,54 @@
 [
     {
         "index": 1,
-        "rating": 1.298529411764706,
+        "rating": 1.1764705882352942,
         "role": "all_rounder",
-        "base_price": 71,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 2,
-        "rating": 4.5588235294117645,
-        "role": "all_rounder",
-        "base_price": 71,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 3,
-        "rating": 2.2288888888888887,
-        "role": "bowler",
-        "base_price": 76,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 4,
-        "rating": 1.7633333333333332,
-        "role": "batter",
-        "base_price": 61,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 5,
-        "rating": 5.222222222222222,
-        "role": "all_rounder",
-        "base_price": 73,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 6,
-        "rating": 0.0,
-        "role": "all_rounder",
-        "base_price": 54,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 7,
-        "rating": 1.9852941176470587,
-        "role": "bowler",
-        "base_price": 95,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 8,
-        "rating": 1.3211111111111111,
-        "role": "all_rounder",
-        "base_price": 83,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 9,
-        "rating": 5.36470588235294,
-        "role": "batter",
-        "base_price": 85,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 10,
-        "rating": 1.4077777777777778,
-        "role": "all_rounder",
-        "base_price": 86,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 11,
-        "rating": 2.0294117647058822,
-        "role": "all_rounder",
-        "base_price": 67,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 12,
-        "rating": 2.9897058823529408,
-        "role": "batter",
-        "base_price": 93,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 13,
-        "rating": 2.7777777777777777,
-        "role": "all_rounder",
-        "base_price": 63,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 14,
-        "rating": 2.9411764705882355,
-        "role": "batter",
-        "base_price": 64,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 15,
-        "rating": 3.088235294117647,
-        "role": "all_rounder",
-        "base_price": 60,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 16,
-        "rating": 2.0655555555555556,
-        "role": "bowler",
-        "base_price": 55,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 17,
-        "rating": 10.0,
-        "role": "all_rounder",
-        "base_price": 76,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 18,
-        "rating": 4.698529411764706,
-        "role": "batter",
-        "base_price": 71,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 19,
-        "rating": 3.986764705882353,
-        "role": "batter",
-        "base_price": 57,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 20,
-        "rating": 6.654411764705882,
-        "role": "batter",
-        "base_price": 93,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 21,
-        "rating": 1.75,
-        "role": "bowler",
-        "base_price": 80,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 22,
-        "rating": 4.576470588235294,
-        "role": "batter",
-        "base_price": 92,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 23,
-        "rating": 0.0,
-        "role": "all_rounder",
-        "base_price": 81,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 24,
-        "rating": 3.088235294117647,
-        "role": "all_rounder",
-        "base_price": 88,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 25,
-        "rating": 3.5367647058823533,
-        "role": "batter",
-        "base_price": 65,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 26,
-        "rating": 2.7205882352941173,
-        "role": "batter",
-        "base_price": 68,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 27,
-        "rating": 0.0,
-        "role": "all_rounder",
-        "base_price": 54,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 28,
-        "rating": 0.5147058823529411,
-        "role": "all_rounder",
-        "base_price": 53,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 29,
-        "rating": 2.5,
-        "role": "all_rounder",
-        "base_price": 95,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 30,
-        "rating": 1.8382352941176472,
-        "role": "all_rounder",
-        "base_price": 69,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 31,
-        "rating": 3.2838235294117646,
-        "role": "batter",
-        "base_price": 78,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 32,
-        "rating": 1.4411764705882355,
-        "role": "all_rounder",
-        "base_price": 82,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 33,
-        "rating": 4.026470588235294,
-        "role": "batter",
-        "base_price": 71,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 34,
-        "rating": 0.0,
-        "role": "all_rounder",
-        "base_price": 75,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 35,
-        "rating": 2.3161764705882355,
-        "role": "all_rounder",
-        "base_price": 57,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 36,
-        "rating": 2.856666666666667,
-        "role": "all_rounder",
-        "base_price": 87,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 37,
-        "rating": 0.9808823529411764,
-        "role": "all_rounder",
-        "base_price": 59,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 38,
-        "rating": 3.262222222222222,
-        "role": "bowler",
-        "base_price": 84,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 39,
-        "rating": 5.147058823529411,
-        "role": "all_rounder",
-        "base_price": 55,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 40,
-        "rating": 2.793333333333333,
-        "role": "all_rounder",
-        "base_price": 87,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 41,
-        "rating": 4.551470588235294,
-        "role": "batter",
-        "base_price": 84,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 42,
-        "rating": 4.375,
-        "role": "batter",
-        "base_price": 76,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 43,
-        "rating": 1.6666666666666665,
-        "role": "all_rounder",
-        "base_price": 82,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 44,
-        "rating": 2.2058823529411766,
-        "role": "all_rounder",
-        "base_price": 77,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 45,
-        "rating": 2.7777777777777777,
-        "role": "all_rounder",
-        "base_price": 63,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 46,
-        "rating": 4.485294117647059,
-        "role": "batter",
-        "base_price": 64,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 47,
-        "rating": 4.911111111111111,
-        "role": "batter",
-        "base_price": 76,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 48,
-        "rating": 0.7838235294117647,
-        "role": "all_rounder",
-        "base_price": 91,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 49,
-        "rating": 1.32,
-        "role": "all_rounder",
-        "base_price": 94,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 50,
-        "rating": 2.6470588235294117,
-        "role": "batter",
-        "base_price": 71,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 51,
-        "rating": 1.4566666666666666,
-        "role": "bowler",
-        "base_price": 100,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 52,
-        "rating": 2.7777777777777777,
-        "role": "all_rounder",
-        "base_price": 93,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 53,
-        "rating": 5.666666666666666,
-        "role": "all_rounder",
-        "base_price": 52,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 54,
-        "rating": 1.4705882352941178,
-        "role": "all_rounder",
-        "base_price": 90,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 55,
-        "rating": 3.85,
-        "role": "batter",
-        "base_price": 100,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 56,
-        "rating": 2.525,
-        "role": "batter",
-        "base_price": 51,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 57,
-        "rating": 2.842647058823529,
-        "role": "batter",
-        "base_price": 99,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 58,
-        "rating": 1.6500000000000001,
-        "role": "bowler",
-        "base_price": 66,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 59,
-        "rating": 3.2,
-        "role": "batter",
-        "base_price": 73,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 60,
-        "rating": 4.555555555555555,
-        "role": "batter",
         "base_price": 97,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 61,
-        "rating": 1.9117647058823528,
+        "index": 2,
+        "rating": 1.8279411764705884,
         "role": "all_rounder",
-        "base_price": 77,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 62,
-        "rating": 3.2838235294117646,
-        "role": "bowler",
         "base_price": 99,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 63,
+        "index": 3,
+        "rating": 3.513235294117647,
+        "role": "batter",
+        "base_price": 59,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 4,
         "rating": 3.8333333333333335,
         "role": "all_rounder",
-        "base_price": 86,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 64,
-        "rating": 1.927777777777778,
-        "role": "bowler",
-        "base_price": 75,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 65,
-        "rating": 4.416666666666666,
-        "role": "all_rounder",
-        "base_price": 60,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 66,
-        "rating": 5.1647058823529415,
-        "role": "batter",
-        "base_price": 92,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 67,
-        "rating": 2.7941176470588234,
-        "role": "all_rounder",
-        "base_price": 77,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 68,
-        "rating": 3.189705882352941,
-        "role": "batter",
-        "base_price": 56,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 69,
-        "rating": 2.21,
-        "role": "bowler",
-        "base_price": 95,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 70,
-        "rating": 1.3235294117647058,
-        "role": "all_rounder",
-        "base_price": 98,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 71,
-        "rating": 0.9558823529411764,
-        "role": "all_rounder",
-        "base_price": 100,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 72,
-        "rating": 2.316666666666667,
-        "role": "bowler",
-        "base_price": 58,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 73,
-        "rating": 1.7161764705882354,
-        "role": "all_rounder",
-        "base_price": 73,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 74,
-        "rating": 2.7777777777777777,
-        "role": "all_rounder",
-        "base_price": 84,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 75,
-        "rating": 3.014705882352941,
-        "role": "batter",
         "base_price": 88,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 76,
-        "rating": 4.608823529411764,
+        "index": 5,
+        "rating": 5.626470588235294,
         "role": "batter",
-        "base_price": 79,
+        "base_price": 64,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 77,
-        "rating": 4.658823529411765,
-        "role": "batter",
-        "base_price": 83,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 78,
-        "rating": 2.611111111111111,
-        "role": "bowler",
-        "base_price": 83,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 79,
-        "rating": 3.088235294117647,
-        "role": "all_rounder",
-        "base_price": 59,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 80,
-        "rating": 2.6666666666666665,
-        "role": "all_rounder",
-        "base_price": 51,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 81,
+        "index": 6,
         "rating": 0.29411764705882354,
         "role": "all_rounder",
-        "base_price": 69,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 82,
-        "rating": 3.9455882352941174,
-        "role": "batter",
-        "base_price": 73,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 83,
-        "rating": 2.1470588235294117,
-        "role": "batter",
-        "base_price": 87,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 84,
-        "rating": 2.3255555555555554,
-        "role": "bowler",
-        "base_price": 56,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 85,
-        "rating": 3.0933333333333337,
-        "role": "bowler",
-        "base_price": 63,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 86,
-        "rating": 3.6941176470588237,
-        "role": "batter",
-        "base_price": 99,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 87,
-        "rating": 2.5555555555555554,
-        "role": "all_rounder",
-        "base_price": 68,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 88,
-        "rating": 1.1279411764705882,
-        "role": "all_rounder",
-        "base_price": 82,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 89,
-        "rating": 3.4558823529411766,
-        "role": "all_rounder",
-        "base_price": 80,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 90,
-        "rating": 1.951111111111111,
-        "role": "all_rounder",
-        "base_price": 69,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 91,
-        "rating": 4.155882352941177,
-        "role": "batter",
-        "base_price": 80,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 92,
-        "rating": 2.3111111111111113,
-        "role": "all_rounder",
-        "base_price": 89,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 93,
-        "rating": 2.226470588235294,
-        "role": "batter",
-        "base_price": 87,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 94,
-        "rating": 4.623529411764706,
-        "role": "batter",
-        "base_price": 50,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 95,
-        "rating": 1.9117647058823528,
-        "role": "all_rounder",
-        "base_price": 66,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 96,
-        "rating": 5.55735294117647,
-        "role": "batter",
-        "base_price": 63,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 97,
-        "rating": 2.954411764705882,
-        "role": "batter",
-        "base_price": 79,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 98,
-        "rating": 2.0555555555555554,
-        "role": "all_rounder",
-        "base_price": 73,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 99,
-        "rating": 2.1533333333333333,
-        "role": "bowler",
-        "base_price": 96,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 100,
-        "rating": 2.136764705882353,
-        "role": "batter",
         "base_price": 57,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 101,
-        "rating": 3.3455882352941173,
-        "role": "batter",
-        "base_price": 86,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 102,
-        "rating": 1.4705882352941178,
-        "role": "all_rounder",
-        "base_price": 57,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 103,
-        "rating": 0.0,
-        "role": "all_rounder",
-        "base_price": 80,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 104,
-        "rating": 4.636764705882353,
-        "role": "batter",
-        "base_price": 59,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 105,
+        "index": 7,
         "rating": 3.8720588235294118,
         "role": "batter",
         "base_price": 82,
@@ -840,1255 +56,303 @@
         "state": 0
     },
     {
-        "index": 106,
-        "rating": 3.725,
-        "role": "all_rounder",
-        "base_price": 78,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 107,
-        "rating": 2.5555555555555554,
-        "role": "all_rounder",
-        "base_price": 87,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 108,
-        "rating": 4.838235294117647,
+        "index": 8,
+        "rating": 2.263333333333333,
         "role": "batter",
-        "base_price": 55,
+        "base_price": 59,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 109,
-        "rating": 0.14705882352941177,
-        "role": "all_rounder",
-        "base_price": 85,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 110,
-        "rating": 3.764705882352941,
-        "role": "batter",
-        "base_price": 58,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 111,
+        "index": 9,
         "rating": 1.2622222222222221,
         "role": "bowler",
-        "base_price": 60,
+        "base_price": 96,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 112,
-        "rating": 1.8444444444444446,
-        "role": "bowler",
-        "base_price": 95,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 113,
-        "rating": 0.9999999999999999,
+        "index": 10,
+        "rating": 1.1764705882352942,
         "role": "all_rounder",
-        "base_price": 88,
+        "base_price": 51,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 114,
-        "rating": 2.9779411764705883,
-        "role": "all_rounder",
-        "base_price": 50,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 115,
-        "rating": 5.6764705882352935,
+        "index": 11,
+        "rating": 6.441176470588235,
         "role": "batter",
-        "base_price": 64,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 116,
-        "rating": 2.9411764705882355,
-        "role": "all_rounder",
-        "base_price": 63,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 117,
-        "rating": 2.764705882352941,
-        "role": "batter",
-        "base_price": 55,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 118,
-        "rating": 4.472058823529411,
-        "role": "batter",
-        "base_price": 90,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 119,
-        "rating": 2.1426470588235293,
-        "role": "batter",
-        "base_price": 75,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 120,
-        "rating": 2.9833333333333334,
-        "role": "bowler",
         "base_price": 98,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 121,
-        "rating": 4.873529411764706,
-        "role": "batter",
-        "base_price": 99,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 122,
-        "rating": 10.0,
+        "index": 12,
+        "rating": 1.298529411764706,
         "role": "all_rounder",
-        "base_price": 78,
+        "base_price": 95,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 123,
-        "rating": 2.5300000000000002,
+        "index": 13,
+        "rating": 4.2176470588235295,
+        "role": "batter",
+        "base_price": 94,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 14,
+        "rating": 1.927777777777778,
         "role": "bowler",
         "base_price": 77,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 124,
-        "rating": 2.9577777777777783,
+        "index": 15,
+        "rating": 4.777777777777778,
         "role": "all_rounder",
-        "base_price": 91,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 125,
-        "rating": 1.8382352941176472,
-        "role": "all_rounder",
-        "base_price": 89,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 126,
-        "rating": 4.480882352941176,
-        "role": "batter",
-        "base_price": 98,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 127,
-        "rating": 1.7647058823529413,
-        "role": "all_rounder",
-        "base_price": 82,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 128,
-        "rating": 3.703333333333333,
-        "role": "all_rounder",
-        "base_price": 93,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 129,
-        "rating": 2.2191176470588236,
-        "role": "batter",
-        "base_price": 89,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 130,
-        "rating": 7.536764705882353,
-        "role": "batter",
         "base_price": 87,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 131,
-        "rating": 2.602941176470588,
-        "role": "batter",
-        "base_price": 73,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 132,
-        "rating": 3.716176470588235,
-        "role": "batter",
-        "base_price": 90,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 133,
-        "rating": 3.860294117647059,
-        "role": "batter",
-        "base_price": 91,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 134,
-        "rating": 3.6764705882352944,
-        "role": "batter",
-        "base_price": 75,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 135,
-        "rating": 5.251470588235295,
-        "role": "batter",
-        "base_price": 66,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 136,
-        "rating": 1.801111111111111,
-        "role": "bowler",
-        "base_price": 69,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 137,
-        "rating": 8.186764705882354,
-        "role": "batter",
-        "base_price": 50,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 138,
-        "rating": 3.555555555555556,
-        "role": "all_rounder",
-        "base_price": 73,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 139,
-        "rating": 3.2058823529411766,
-        "role": "batter",
-        "base_price": 68,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 140,
-        "rating": 5.626470588235294,
-        "role": "batter",
-        "base_price": 85,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 141,
-        "rating": 2.448888888888889,
-        "role": "bowler",
-        "base_price": 62,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 142,
-        "rating": 4.389705882352941,
-        "role": "batter",
-        "base_price": 80,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 143,
-        "rating": 0.29411764705882354,
-        "role": "all_rounder",
-        "base_price": 94,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 144,
-        "rating": 3.111111111111111,
-        "role": "all_rounder",
-        "base_price": 75,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 145,
-        "rating": 2.4573529411764707,
-        "role": "batter",
-        "base_price": 78,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 146,
-        "rating": 0.29411764705882354,
-        "role": "all_rounder",
-        "base_price": 53,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 147,
-        "rating": 2.4566666666666666,
-        "role": "all_rounder",
-        "base_price": 82,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 148,
-        "rating": 3.5,
-        "role": "all_rounder",
-        "base_price": 73,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 149,
-        "rating": 4.2176470588235295,
+        "index": 16,
+        "rating": 2.1632352941176474,
         "role": "batter",
         "base_price": 84,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 150,
-        "rating": 4.448529411764706,
-        "role": "batter",
-        "base_price": 77,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 151,
-        "rating": 8.455882352941176,
-        "role": "batter",
-        "base_price": 74,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 152,
-        "rating": 1.9676470588235295,
+        "index": 17,
+        "rating": 2.226470588235294,
         "role": "batter",
         "base_price": 67,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 153,
-        "rating": 2.431111111111111,
+        "index": 18,
+        "rating": 1.7633333333333332,
         "role": "batter",
-        "base_price": 71,
+        "base_price": 73,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 154,
-        "rating": 3.161764705882353,
-        "role": "batter",
-        "base_price": 88,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 155,
-        "rating": 0.44117647058823534,
-        "role": "all_rounder",
-        "base_price": 83,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 156,
-        "rating": 5.970588235294118,
-        "role": "batter",
-        "base_price": 75,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 157,
-        "rating": 2.124444444444445,
-        "role": "bowler",
-        "base_price": 74,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 158,
-        "rating": 3.4444444444444446,
-        "role": "all_rounder",
-        "base_price": 91,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 159,
-        "rating": 2.158888888888889,
-        "role": "batter",
-        "base_price": 87,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 160,
-        "rating": 1.8988888888888888,
-        "role": "bowler",
-        "base_price": 86,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 161,
-        "rating": 1.8279411764705884,
-        "role": "all_rounder",
-        "base_price": 74,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 162,
-        "rating": 4.777777777777778,
-        "role": "all_rounder",
-        "base_price": 54,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 163,
-        "rating": 2.2288888888888887,
+        "index": 19,
+        "rating": 2.448888888888889,
         "role": "bowler",
         "base_price": 100,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 164,
-        "rating": 1.7633333333333332,
-        "role": "bowler",
-        "base_price": 91,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 165,
-        "rating": 0.9308823529411765,
+        "index": 20,
+        "rating": 1.0222222222222221,
         "role": "all_rounder",
-        "base_price": 93,
+        "base_price": 71,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 166,
-        "rating": 3.8838235294117647,
+        "index": 21,
+        "rating": 2.611111111111111,
+        "role": "bowler",
+        "base_price": 81,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 22,
+        "rating": 3.5691176470588237,
+        "role": "batter",
+        "base_price": 79,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 23,
+        "rating": 2.21,
+        "role": "bowler",
+        "base_price": 80,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 24,
+        "rating": 3.204411764705882,
+        "role": "batter",
+        "base_price": 58,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 25,
+        "rating": 2.6666666666666665,
+        "role": "batter",
+        "base_price": 76,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 26,
+        "rating": 3.986764705882353,
+        "role": "batter",
+        "base_price": 66,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 27,
+        "rating": 3.6941176470588237,
+        "role": "batter",
+        "base_price": 75,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 28,
+        "rating": 2.431111111111111,
+        "role": "batter",
+        "base_price": 61,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 29,
+        "rating": 1.801111111111111,
+        "role": "bowler",
+        "base_price": 65,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 30,
+        "rating": 3.161764705882353,
+        "role": "batter",
+        "base_price": 50,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 31,
+        "rating": 4.0744444444444445,
+        "role": "all_rounder",
+        "base_price": 88,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 32,
+        "rating": 2.3255555555555554,
+        "role": "bowler",
+        "base_price": 64,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 33,
+        "rating": 4.194444444444445,
+        "role": "batter",
+        "base_price": 94,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 34,
+        "rating": 1.225,
+        "role": "all_rounder",
+        "base_price": 52,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 35,
+        "rating": 1.7422222222222223,
+        "role": "bowler",
+        "base_price": 97,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 36,
+        "rating": 1.8599999999999997,
+        "role": "bowler",
+        "base_price": 61,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 37,
+        "rating": 0.0,
+        "role": "all_rounder",
+        "base_price": 58,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 38,
+        "rating": 2.9411764705882355,
+        "role": "all_rounder",
+        "base_price": 89,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 39,
+        "rating": 1.9022222222222225,
+        "role": "bowler",
+        "base_price": 68,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 40,
+        "rating": 4.366176470588235,
         "role": "batter",
         "base_price": 92,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 167,
-        "rating": 4.777777777777778,
-        "role": "all_rounder",
-        "base_price": 95,
+        "index": 41,
+        "rating": 5.1647058823529415,
+        "role": "batter",
+        "base_price": 93,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 168,
-        "rating": 2.3529411764705883,
+        "index": 42,
+        "rating": 2.0944444444444446,
+        "role": "bowler",
+        "base_price": 57,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 43,
+        "rating": 5.730882352941177,
         "role": "batter",
         "base_price": 69,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 169,
-        "rating": 2.3333333333333335,
-        "role": "all_rounder",
-        "base_price": 68,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 170,
-        "rating": 1.981111111111111,
-        "role": "bowler",
-        "base_price": 75,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 171,
-        "rating": 3.513235294117647,
-        "role": "batter",
-        "base_price": 51,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 172,
-        "rating": 2.3833333333333333,
-        "role": "batter",
-        "base_price": 84,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 173,
-        "rating": 4.527941176470588,
-        "role": "batter",
-        "base_price": 74,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 174,
-        "rating": 2.0477777777777777,
-        "role": "bowler",
-        "base_price": 80,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 175,
-        "rating": 2.1632352941176474,
-        "role": "batter",
-        "base_price": 64,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 176,
-        "rating": 1.8966666666666667,
-        "role": "bowler",
-        "base_price": 95,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 177,
-        "rating": 4.117647058823529,
-        "role": "bowler",
-        "base_price": 97,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 178,
-        "rating": 2.9411764705882355,
-        "role": "all_rounder",
-        "base_price": 73,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 179,
-        "rating": 2.6838235294117645,
-        "role": "all_rounder",
-        "base_price": 87,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 180,
-        "rating": 4.366176470588235,
-        "role": "batter",
-        "base_price": 61,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 181,
-        "rating": 0.29411764705882354,
-        "role": "all_rounder",
-        "base_price": 88,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 182,
-        "rating": 0.0,
-        "role": "all_rounder",
-        "base_price": 88,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 183,
-        "rating": 1.4338235294117645,
-        "role": "all_rounder",
-        "base_price": 68,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 184,
-        "rating": 3.9941176470588236,
-        "role": "batter",
-        "base_price": 100,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 185,
-        "rating": 2.2794117647058822,
-        "role": "all_rounder",
-        "base_price": 87,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 186,
-        "rating": 4.1,
-        "role": "batter",
-        "base_price": 67,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 187,
-        "rating": 1.225,
-        "role": "all_rounder",
-        "base_price": 84,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 188,
-        "rating": 3.651470588235294,
-        "role": "batter",
-        "base_price": 85,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 189,
-        "rating": 2.5555555555555554,
-        "role": "all_rounder",
-        "base_price": 93,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 190,
-        "rating": 1.8333333333333333,
-        "role": "all_rounder",
-        "base_price": 86,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 191,
-        "rating": 1.7500000000000002,
-        "role": "batter",
-        "base_price": 55,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 192,
-        "rating": 4.705882352941177,
-        "role": "bowler",
-        "base_price": 73,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 193,
-        "rating": 3.9705882352941173,
-        "role": "all_rounder",
-        "base_price": 89,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 194,
-        "rating": 4.0744444444444445,
-        "role": "all_rounder",
-        "base_price": 66,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 195,
-        "rating": 2.6647058823529415,
-        "role": "batter",
-        "base_price": 61,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 196,
-        "rating": 3.204411764705882,
-        "role": "batter",
-        "base_price": 79,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 197,
-        "rating": 2.833333333333333,
-        "role": "all_rounder",
-        "base_price": 67,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 198,
-        "rating": 2.9411764705882355,
-        "role": "bowler",
-        "base_price": 95,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 199,
-        "rating": 6.111111111111112,
-        "role": "all_rounder",
-        "base_price": 91,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 200,
-        "rating": 2.6666666666666665,
-        "role": "batter",
-        "base_price": 99,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 201,
-        "rating": 4.211764705882353,
-        "role": "batter",
-        "base_price": 90,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 202,
-        "rating": 2.111111111111111,
-        "role": "all_rounder",
-        "base_price": 95,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 203,
-        "rating": 2.3577777777777778,
-        "role": "all_rounder",
-        "base_price": 85,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 204,
-        "rating": 9.35,
-        "role": "batter",
-        "base_price": 97,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 205,
-        "rating": 3.296666666666667,
-        "role": "all_rounder",
-        "base_price": 73,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 206,
-        "rating": 5.497058823529413,
-        "role": "batter",
-        "base_price": 74,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 207,
-        "rating": 2.0944444444444446,
-        "role": "bowler",
-        "base_price": 86,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 208,
-        "rating": 2.263333333333333,
-        "role": "batter",
-        "base_price": 81,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 209,
-        "rating": 1.8599999999999997,
-        "role": "bowler",
-        "base_price": 95,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 210,
-        "rating": 2.481111111111111,
-        "role": "all_rounder",
-        "base_price": 71,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 211,
-        "rating": 3.544117647058824,
-        "role": "batter",
-        "base_price": 89,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 212,
-        "rating": 2.702941176470588,
-        "role": "batter",
-        "base_price": 90,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 213,
-        "rating": 3.2029411764705884,
-        "role": "batter",
-        "base_price": 85,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 214,
-        "rating": 3.504411764705882,
-        "role": "batter",
-        "base_price": 65,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 215,
-        "rating": 5.730882352941177,
-        "role": "batter",
-        "base_price": 67,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 216,
-        "rating": 6.441176470588235,
-        "role": "batter",
-        "base_price": 70,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 217,
-        "rating": 0.8823529411764707,
-        "role": "all_rounder",
-        "base_price": 77,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 218,
-        "rating": 3.961764705882353,
-        "role": "batter",
-        "base_price": 72,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 219,
+        "index": 44,
         "rating": 4.033823529411765,
         "role": "batter",
-        "base_price": 79,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 220,
-        "rating": 1.1764705882352942,
-        "role": "all_rounder",
-        "base_price": 67,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 221,
-        "rating": 1.8977777777777778,
-        "role": "bowler",
-        "base_price": 58,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 222,
-        "rating": 4.054411764705883,
-        "role": "batter",
-        "base_price": 77,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 223,
-        "rating": 2.284444444444444,
-        "role": "all_rounder",
-        "base_price": 74,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 224,
-        "rating": 2.2888888888888888,
-        "role": "all_rounder",
-        "base_price": 80,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 225,
-        "rating": 1.0222222222222221,
-        "role": "all_rounder",
-        "base_price": 74,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 226,
-        "rating": 3.2222222222222223,
-        "role": "all_rounder",
-        "base_price": 79,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 227,
-        "rating": 1.7647058823529413,
-        "role": "bowler",
-        "base_price": 76,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 228,
-        "rating": 4.0,
-        "role": "all_rounder",
-        "base_price": 88,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 229,
-        "rating": 0.5397058823529411,
-        "role": "all_rounder",
-        "base_price": 75,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 230,
-        "rating": 1.5191176470588235,
-        "role": "all_rounder",
-        "base_price": 57,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 231,
-        "rating": 1.6,
-        "role": "all_rounder",
-        "base_price": 93,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 232,
-        "rating": 4.2102941176470585,
-        "role": "batter",
-        "base_price": 100,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 233,
-        "rating": 4.194444444444445,
-        "role": "batter",
-        "base_price": 75,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 234,
-        "rating": 1.1764705882352942,
-        "role": "all_rounder",
-        "base_price": 91,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 235,
-        "rating": 0.0,
-        "role": "all_rounder",
-        "base_price": 64,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 236,
-        "rating": 2.111111111111111,
-        "role": "all_rounder",
-        "base_price": 67,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 237,
-        "rating": 1.9117647058823528,
-        "role": "bowler",
-        "base_price": 94,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 238,
-        "rating": 6.722222222222223,
-        "role": "batter",
-        "base_price": 76,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 239,
-        "rating": 3.9220588235294116,
-        "role": "batter",
-        "base_price": 77,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 240,
-        "rating": 2.5766666666666667,
-        "role": "bowler",
-        "base_price": 82,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 241,
-        "rating": 4.444444444444445,
-        "role": "all_rounder",
-        "base_price": 87,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 242,
-        "rating": 0.29411764705882354,
-        "role": "all_rounder",
-        "base_price": 75,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 243,
-        "rating": 2.1882352941176473,
-        "role": "batter",
-        "base_price": 85,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 244,
-        "rating": 1.7422222222222223,
-        "role": "bowler",
-        "base_price": 94,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 245,
-        "rating": 2.389705882352941,
-        "role": "batter",
-        "base_price": 50,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 246,
-        "rating": 2.0833333333333335,
-        "role": "all_rounder",
-        "base_price": 89,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 247,
-        "rating": 3.9838235294117648,
-        "role": "batter",
-        "base_price": 86,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 248,
-        "rating": 1.4882352941176469,
-        "role": "bowler",
-        "base_price": 51,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 249,
-        "rating": 1.5441176470588236,
-        "role": "all_rounder",
-        "base_price": 87,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 250,
-        "rating": 2.9522222222222223,
-        "role": "batter",
-        "base_price": 82,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 251,
-        "rating": 1.6444444444444444,
-        "role": "bowler",
-        "base_price": 53,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 252,
-        "rating": 3.98235294117647,
-        "role": "batter",
         "base_price": 61,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 253,
-        "rating": 4.313235294117646,
-        "role": "all_rounder",
-        "base_price": 77,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 254,
-        "rating": 1.7279411764705883,
-        "role": "all_rounder",
-        "base_price": 79,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 255,
-        "rating": 0.44117647058823534,
-        "role": "all_rounder",
-        "base_price": 77,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 256,
-        "rating": 3.5691176470588237,
-        "role": "batter",
-        "base_price": 70,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 257,
-        "rating": 1.9022222222222225,
-        "role": "bowler",
-        "base_price": 65,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 258,
-        "rating": 2.0,
-        "role": "all_rounder",
-        "base_price": 85,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 259,
-        "rating": 2.0277777777777777,
-        "role": "all_rounder",
-        "base_price": 56,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 260,
-        "rating": 2.9444444444444446,
-        "role": "all_rounder",
-        "base_price": 75,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 261,
-        "rating": 1.8888888888888888,
-        "role": "all_rounder",
-        "base_price": 57,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 262,
+        "index": 45,
         "rating": 2.722222222222222,
         "role": "all_rounder",
         "base_price": 50,
@@ -2096,71 +360,431 @@
         "state": 0
     },
     {
-        "index": 263,
+        "index": 46,
         "rating": 0.0,
         "role": "all_rounder",
-        "base_price": 74,
+        "base_price": 72,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 264,
-        "rating": 3.111111111111111,
+        "index": 47,
+        "rating": 1.4705882352941178,
         "role": "all_rounder",
-        "base_price": 85,
+        "base_price": 94,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 265,
-        "rating": 1.7222222222222223,
+        "index": 48,
+        "rating": 4.1,
+        "role": "batter",
+        "base_price": 70,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 49,
+        "rating": 2.3161764705882355,
         "role": "all_rounder",
-        "base_price": 100,
+        "base_price": 57,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 266,
-        "rating": 0.6000000000000001,
+        "index": 50,
+        "rating": 5.36470588235294,
+        "role": "batter",
+        "base_price": 84,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 51,
+        "rating": 2.3333333333333335,
         "role": "all_rounder",
-        "base_price": 89,
+        "base_price": 60,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 267,
-        "rating": 0.0,
+        "index": 52,
+        "rating": 2.764705882352941,
+        "role": "batter",
+        "base_price": 68,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 53,
+        "rating": 3.088235294117647,
         "role": "all_rounder",
-        "base_price": 59,
+        "base_price": 65,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 268,
-        "rating": 2.7777777777777777,
-        "role": "all_rounder",
-        "base_price": 76,
+        "index": 54,
+        "rating": 2.158888888888889,
+        "role": "batter",
+        "base_price": 73,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 269,
-        "rating": 0.0,
+        "index": 55,
+        "rating": 2.0955555555555554,
         "role": "all_rounder",
         "base_price": 98,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 270,
-        "rating": 2.0955555555555554,
+        "index": 56,
+        "rating": 1.8966666666666667,
+        "role": "bowler",
+        "base_price": 89,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 57,
+        "rating": 5.497058823529413,
+        "role": "batter",
+        "base_price": 65,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 58,
+        "rating": 3.764705882352941,
+        "role": "batter",
+        "base_price": 72,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 59,
+        "rating": 4.636764705882353,
+        "role": "batter",
+        "base_price": 54,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 60,
+        "rating": 1.32,
         "role": "all_rounder",
         "base_price": 91,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 271,
+        "index": 61,
+        "rating": 3.0933333333333337,
+        "role": "bowler",
+        "base_price": 78,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 62,
+        "rating": 2.7941176470588234,
+        "role": "all_rounder",
+        "base_price": 87,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 63,
+        "rating": 2.6838235294117645,
+        "role": "all_rounder",
+        "base_price": 67,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 64,
+        "rating": 2.5555555555555554,
+        "role": "all_rounder",
+        "base_price": 73,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 65,
+        "rating": 3.9941176470588236,
+        "role": "batter",
+        "base_price": 100,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 66,
+        "rating": 2.3529411764705883,
+        "role": "batter",
+        "base_price": 98,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 67,
+        "rating": 2.2058823529411766,
+        "role": "all_rounder",
+        "base_price": 71,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 68,
+        "rating": 1.4077777777777778,
+        "role": "all_rounder",
+        "base_price": 57,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 69,
+        "rating": 2.1470588235294117,
+        "role": "batter",
+        "base_price": 94,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 70,
+        "rating": 3.4444444444444446,
+        "role": "all_rounder",
+        "base_price": 98,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 71,
+        "rating": 1.9117647058823528,
+        "role": "all_rounder",
+        "base_price": 58,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 72,
+        "rating": 0.29411764705882354,
+        "role": "all_rounder",
+        "base_price": 68,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 73,
+        "rating": 2.9779411764705883,
+        "role": "all_rounder",
+        "base_price": 93,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 74,
+        "rating": 2.5766666666666667,
+        "role": "bowler",
+        "base_price": 72,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 75,
+        "rating": 2.7777777777777777,
+        "role": "all_rounder",
+        "base_price": 57,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 76,
+        "rating": 3.4558823529411766,
+        "role": "all_rounder",
+        "base_price": 81,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 77,
+        "rating": 2.2794117647058822,
+        "role": "all_rounder",
+        "base_price": 50,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 78,
+        "rating": 0.5397058823529411,
+        "role": "all_rounder",
+        "base_price": 62,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 79,
+        "rating": 4.527941176470588,
+        "role": "batter",
+        "base_price": 50,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 80,
+        "rating": 0.6666666666666666,
+        "role": "all_rounder",
+        "base_price": 93,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 81,
+        "rating": 1.9117647058823528,
+        "role": "all_rounder",
+        "base_price": 51,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 82,
+        "rating": 3.961764705882353,
+        "role": "batter",
+        "base_price": 84,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 83,
+        "rating": 1.4411764705882355,
+        "role": "all_rounder",
+        "base_price": 85,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 84,
+        "rating": 1.8977777777777778,
+        "role": "bowler",
+        "base_price": 82,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 85,
+        "rating": 3.014705882352941,
+        "role": "batter",
+        "base_price": 66,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 86,
+        "rating": 2.5555555555555554,
+        "role": "all_rounder",
+        "base_price": 65,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 87,
+        "rating": 4.777777777777778,
+        "role": "all_rounder",
+        "base_price": 54,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 88,
+        "rating": 5.222222222222222,
+        "role": "all_rounder",
+        "base_price": 74,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 89,
+        "rating": 2.842647058823529,
+        "role": "batter",
+        "base_price": 67,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 90,
+        "rating": 3.555555555555556,
+        "role": "all_rounder",
+        "base_price": 57,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 91,
+        "rating": 1.8382352941176472,
+        "role": "all_rounder",
+        "base_price": 64,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 92,
+        "rating": 3.544117647058824,
+        "role": "batter",
+        "base_price": 84,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 93,
+        "rating": 5.251470588235295,
+        "role": "batter",
+        "base_price": 62,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 94,
+        "rating": 2.5300000000000002,
+        "role": "bowler",
+        "base_price": 75,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 95,
+        "rating": 0.44117647058823534,
+        "role": "all_rounder",
+        "base_price": 94,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 96,
+        "rating": 1.8382352941176472,
+        "role": "all_rounder",
+        "base_price": 78,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 97,
+        "rating": 2.833333333333333,
+        "role": "all_rounder",
+        "base_price": 76,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 98,
+        "rating": 2.525,
+        "role": "batter",
+        "base_price": 71,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 99,
         "rating": 0.0,
         "role": "all_rounder",
         "base_price": 73,
@@ -2168,26 +792,1402 @@
         "state": 0
     },
     {
-        "index": 272,
-        "rating": 0.0,
+        "index": 100,
+        "rating": 3.189705882352941,
+        "role": "batter",
+        "base_price": 91,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 101,
+        "rating": 0.29411764705882354,
         "role": "all_rounder",
+        "base_price": 52,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 102,
+        "rating": 3.9838235294117648,
+        "role": "batter",
+        "base_price": 62,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 103,
+        "rating": 3.296666666666667,
+        "role": "all_rounder",
+        "base_price": 52,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 104,
+        "rating": 4.838235294117647,
+        "role": "batter",
         "base_price": 69,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 273,
-        "rating": 0.6666666666666666,
+        "index": 105,
+        "rating": 2.3833333333333333,
+        "role": "batter",
+        "base_price": 95,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 106,
+        "rating": 4.026470588235294,
+        "role": "batter",
+        "base_price": 61,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 107,
+        "rating": 3.85,
+        "role": "batter",
+        "base_price": 50,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 108,
+        "rating": 1.981111111111111,
+        "role": "bowler",
+        "base_price": 69,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 109,
+        "rating": 9.35,
+        "role": "batter",
+        "base_price": 98,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 110,
+        "rating": 2.9833333333333334,
+        "role": "bowler",
+        "base_price": 67,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 111,
+        "rating": 2.9577777777777783,
         "role": "all_rounder",
         "base_price": 99,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 274,
+        "index": 112,
+        "rating": 2.111111111111111,
+        "role": "all_rounder",
+        "base_price": 55,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 113,
+        "rating": 3.2838235294117646,
+        "role": "bowler",
+        "base_price": 97,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 114,
+        "rating": 6.722222222222223,
+        "role": "batter",
+        "base_price": 67,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 115,
+        "rating": 4.576470588235294,
+        "role": "batter",
+        "base_price": 90,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 116,
+        "rating": 4.485294117647059,
+        "role": "batter",
+        "base_price": 83,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 117,
+        "rating": 4.313235294117646,
+        "role": "all_rounder",
+        "base_price": 83,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 118,
+        "rating": 4.117647058823529,
+        "role": "bowler",
+        "base_price": 80,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 119,
+        "rating": 2.124444444444445,
+        "role": "bowler",
+        "base_price": 85,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 120,
+        "rating": 2.4566666666666666,
+        "role": "all_rounder",
+        "base_price": 86,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 121,
+        "rating": 0.8823529411764707,
+        "role": "all_rounder",
+        "base_price": 82,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 122,
+        "rating": 10.0,
+        "role": "all_rounder",
+        "base_price": 93,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 123,
+        "rating": 1.7222222222222223,
+        "role": "all_rounder",
+        "base_price": 78,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 124,
+        "rating": 1.9676470588235295,
+        "role": "batter",
+        "base_price": 78,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 125,
+        "rating": 2.954411764705882,
+        "role": "batter",
+        "base_price": 75,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 126,
+        "rating": 8.455882352941176,
+        "role": "batter",
+        "base_price": 80,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 127,
+        "rating": 1.75,
+        "role": "bowler",
+        "base_price": 51,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 128,
+        "rating": 3.9705882352941173,
+        "role": "all_rounder",
+        "base_price": 61,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 129,
+        "rating": 2.793333333333333,
+        "role": "all_rounder",
+        "base_price": 80,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 130,
+        "rating": 0.7838235294117647,
+        "role": "all_rounder",
+        "base_price": 62,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 131,
+        "rating": 1.8888888888888888,
+        "role": "all_rounder",
+        "base_price": 81,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 132,
+        "rating": 3.5367647058823533,
+        "role": "batter",
+        "base_price": 75,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 133,
+        "rating": 2.702941176470588,
+        "role": "batter",
+        "base_price": 74,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 134,
+        "rating": 2.111111111111111,
+        "role": "all_rounder",
+        "base_price": 81,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 135,
+        "rating": 2.2191176470588236,
+        "role": "batter",
+        "base_price": 52,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 136,
+        "rating": 5.6764705882352935,
+        "role": "batter",
+        "base_price": 50,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 137,
+        "rating": 1.8988888888888888,
+        "role": "bowler",
+        "base_price": 66,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 138,
+        "rating": 3.6764705882352944,
+        "role": "batter",
+        "base_price": 79,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 139,
+        "rating": 1.7161764705882354,
+        "role": "all_rounder",
+        "base_price": 75,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 140,
+        "rating": 1.7500000000000002,
+        "role": "batter",
+        "base_price": 76,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 141,
+        "rating": 1.8333333333333333,
+        "role": "all_rounder",
+        "base_price": 89,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 142,
+        "rating": 2.9411764705882355,
+        "role": "bowler",
+        "base_price": 98,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 143,
+        "rating": 2.0555555555555554,
+        "role": "all_rounder",
+        "base_price": 56,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 144,
+        "rating": 4.416666666666666,
+        "role": "all_rounder",
+        "base_price": 68,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 145,
+        "rating": 3.716176470588235,
+        "role": "batter",
+        "base_price": 69,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 146,
+        "rating": 2.9411764705882355,
+        "role": "batter",
+        "base_price": 77,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 147,
+        "rating": 4.5588235294117645,
+        "role": "all_rounder",
+        "base_price": 87,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 148,
+        "rating": 4.658823529411765,
+        "role": "batter",
+        "base_price": 61,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 149,
+        "rating": 1.4882352941176469,
+        "role": "bowler",
+        "base_price": 56,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 150,
+        "rating": 2.0477777777777777,
+        "role": "bowler",
+        "base_price": 81,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 151,
+        "rating": 2.389705882352941,
+        "role": "batter",
+        "base_price": 76,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 152,
+        "rating": 1.8444444444444446,
+        "role": "bowler",
+        "base_price": 89,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 153,
+        "rating": 1.7279411764705883,
+        "role": "all_rounder",
+        "base_price": 69,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 154,
+        "rating": 2.0655555555555556,
+        "role": "bowler",
+        "base_price": 54,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 155,
+        "rating": 3.703333333333333,
+        "role": "all_rounder",
+        "base_price": 74,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 156,
+        "rating": 4.623529411764706,
+        "role": "batter",
+        "base_price": 99,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 157,
+        "rating": 2.3577777777777778,
+        "role": "all_rounder",
+        "base_price": 62,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 158,
+        "rating": 1.6444444444444444,
+        "role": "bowler",
+        "base_price": 65,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 159,
+        "rating": 3.111111111111111,
+        "role": "all_rounder",
+        "base_price": 62,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 160,
+        "rating": 2.602941176470588,
+        "role": "batter",
+        "base_price": 67,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 161,
+        "rating": 4.375,
+        "role": "batter",
+        "base_price": 97,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 162,
+        "rating": 0.5147058823529411,
+        "role": "all_rounder",
+        "base_price": 94,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 163,
+        "rating": 10.0,
+        "role": "all_rounder",
+        "base_price": 64,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 164,
+        "rating": 4.551470588235294,
+        "role": "batter",
+        "base_price": 79,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 165,
+        "rating": 0.0,
+        "role": "all_rounder",
+        "base_price": 56,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 166,
+        "rating": 3.725,
+        "role": "all_rounder",
+        "base_price": 94,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 167,
+        "rating": 3.088235294117647,
+        "role": "all_rounder",
+        "base_price": 66,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 168,
+        "rating": 3.9220588235294116,
+        "role": "batter",
+        "base_price": 92,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 169,
+        "rating": 2.3111111111111113,
+        "role": "all_rounder",
+        "base_price": 55,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 170,
+        "rating": 5.970588235294118,
+        "role": "batter",
+        "base_price": 88,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 171,
+        "rating": 0.0,
+        "role": "all_rounder",
+        "base_price": 52,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 172,
+        "rating": 2.1882352941176473,
+        "role": "batter",
+        "base_price": 80,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 173,
+        "rating": 4.698529411764706,
+        "role": "batter",
+        "base_price": 69,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 174,
+        "rating": 2.6470588235294117,
+        "role": "batter",
+        "base_price": 54,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 175,
+        "rating": 1.9117647058823528,
+        "role": "bowler",
+        "base_price": 81,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 176,
+        "rating": 1.3211111111111111,
+        "role": "all_rounder",
+        "base_price": 56,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 177,
+        "rating": 2.481111111111111,
+        "role": "all_rounder",
+        "base_price": 58,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 178,
+        "rating": 0.14705882352941177,
+        "role": "all_rounder",
+        "base_price": 93,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 179,
+        "rating": 2.9522222222222223,
+        "role": "batter",
+        "base_price": 70,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 180,
+        "rating": 4.389705882352941,
+        "role": "batter",
+        "base_price": 98,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 181,
+        "rating": 7.536764705882353,
+        "role": "batter",
+        "base_price": 79,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 182,
+        "rating": 2.136764705882353,
+        "role": "batter",
+        "base_price": 57,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 183,
+        "rating": 1.6,
+        "role": "all_rounder",
+        "base_price": 76,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 184,
+        "rating": 0.0,
+        "role": "all_rounder",
+        "base_price": 93,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 185,
         "rating": 2.7777777777777777,
         "role": "all_rounder",
+        "base_price": 72,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 186,
+        "rating": 4.155882352941177,
+        "role": "batter",
+        "base_price": 96,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 187,
+        "rating": 3.088235294117647,
+        "role": "all_rounder",
+        "base_price": 66,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 188,
+        "rating": 2.6666666666666665,
+        "role": "all_rounder",
+        "base_price": 72,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 189,
+        "rating": 2.0833333333333335,
+        "role": "all_rounder",
+        "base_price": 54,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 190,
+        "rating": 3.651470588235294,
+        "role": "batter",
+        "base_price": 81,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 191,
+        "rating": 3.504411764705882,
+        "role": "batter",
+        "base_price": 64,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 192,
+        "rating": 2.4573529411764707,
+        "role": "batter",
+        "base_price": 62,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 193,
+        "rating": 0.0,
+        "role": "all_rounder",
+        "base_price": 99,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 194,
+        "rating": 2.7777777777777777,
+        "role": "all_rounder",
+        "base_price": 57,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 195,
+        "rating": 2.7205882352941173,
+        "role": "batter",
+        "base_price": 61,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 196,
+        "rating": 3.2058823529411766,
+        "role": "batter",
+        "base_price": 66,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 197,
+        "rating": 0.9999999999999999,
+        "role": "all_rounder",
+        "base_price": 84,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 198,
+        "rating": 3.98235294117647,
+        "role": "batter",
+        "base_price": 75,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 199,
+        "rating": 0.0,
+        "role": "all_rounder",
+        "base_price": 63,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 200,
+        "rating": 2.856666666666667,
+        "role": "all_rounder",
+        "base_price": 52,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 201,
+        "rating": 4.472058823529411,
+        "role": "batter",
+        "base_price": 86,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 202,
+        "rating": 1.6500000000000001,
+        "role": "bowler",
+        "base_price": 88,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 203,
+        "rating": 0.0,
+        "role": "all_rounder",
+        "base_price": 79,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 204,
+        "rating": 2.9444444444444446,
+        "role": "all_rounder",
+        "base_price": 71,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 205,
+        "rating": 0.9808823529411764,
+        "role": "all_rounder",
+        "base_price": 51,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 206,
+        "rating": 2.284444444444444,
+        "role": "all_rounder",
+        "base_price": 88,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 207,
+        "rating": 4.211764705882353,
+        "role": "batter",
+        "base_price": 55,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 208,
+        "rating": 8.186764705882354,
+        "role": "batter",
+        "base_price": 73,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 209,
+        "rating": 4.2102941176470585,
+        "role": "batter",
+        "base_price": 86,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 210,
+        "rating": 2.5555555555555554,
+        "role": "all_rounder",
+        "base_price": 83,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 211,
+        "rating": 2.9411764705882355,
+        "role": "all_rounder",
+        "base_price": 71,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 212,
+        "rating": 0.6000000000000001,
+        "role": "all_rounder",
+        "base_price": 96,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 213,
+        "rating": 3.3455882352941173,
+        "role": "batter",
+        "base_price": 59,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 214,
+        "rating": 1.7647058823529413,
+        "role": "bowler",
+        "base_price": 95,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 215,
+        "rating": 4.705882352941177,
+        "role": "bowler",
+        "base_price": 50,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 216,
+        "rating": 4.480882352941176,
+        "role": "batter",
+        "base_price": 51,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 217,
+        "rating": 4.873529411764706,
+        "role": "batter",
+        "base_price": 69,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 218,
+        "rating": 3.111111111111111,
+        "role": "all_rounder",
+        "base_price": 78,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 219,
+        "rating": 4.555555555555555,
+        "role": "batter",
+        "base_price": 86,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 220,
+        "rating": 4.444444444444445,
+        "role": "all_rounder",
+        "base_price": 51,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 221,
+        "rating": 1.4566666666666666,
+        "role": "bowler",
+        "base_price": 59,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 222,
+        "rating": 4.911111111111111,
+        "role": "batter",
+        "base_price": 92,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 223,
+        "rating": 3.5,
+        "role": "all_rounder",
+        "base_price": 95,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 224,
+        "rating": 1.4705882352941178,
+        "role": "all_rounder",
+        "base_price": 85,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 225,
+        "rating": 0.29411764705882354,
+        "role": "all_rounder",
+        "base_price": 75,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 226,
+        "rating": 3.2838235294117646,
+        "role": "batter",
+        "base_price": 58,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 227,
+        "rating": 6.111111111111112,
+        "role": "all_rounder",
+        "base_price": 89,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 228,
+        "rating": 2.0,
+        "role": "all_rounder",
+        "base_price": 95,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 229,
+        "rating": 3.2029411764705884,
+        "role": "batter",
+        "base_price": 62,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 230,
+        "rating": 5.55735294117647,
+        "role": "batter",
+        "base_price": 53,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 231,
+        "rating": 0.44117647058823534,
+        "role": "all_rounder",
+        "base_price": 97,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 232,
+        "rating": 2.316666666666667,
+        "role": "bowler",
+        "base_price": 72,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 233,
+        "rating": 2.1426470588235293,
+        "role": "batter",
+        "base_price": 68,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 234,
+        "rating": 2.2888888888888888,
+        "role": "all_rounder",
+        "base_price": 53,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 235,
+        "rating": 2.2288888888888887,
+        "role": "bowler",
+        "base_price": 85,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 236,
+        "rating": 2.7777777777777777,
+        "role": "all_rounder",
+        "base_price": 100,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 237,
+        "rating": 4.054411764705883,
+        "role": "batter",
+        "base_price": 72,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 238,
+        "rating": 2.9897058823529408,
+        "role": "batter",
+        "base_price": 82,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 239,
+        "rating": 0.0,
+        "role": "all_rounder",
+        "base_price": 98,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 240,
+        "rating": 1.7633333333333332,
+        "role": "bowler",
+        "base_price": 98,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 241,
+        "rating": 2.0294117647058822,
+        "role": "all_rounder",
+        "base_price": 61,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 242,
+        "rating": 0.0,
+        "role": "all_rounder",
+        "base_price": 66,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 243,
+        "rating": 0.9558823529411764,
+        "role": "all_rounder",
+        "base_price": 95,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 244,
+        "rating": 1.1279411764705882,
+        "role": "all_rounder",
+        "base_price": 64,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 245,
+        "rating": 1.7647058823529413,
+        "role": "all_rounder",
         "base_price": 77,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 246,
+        "rating": 5.666666666666666,
+        "role": "all_rounder",
+        "base_price": 54,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 247,
+        "rating": 3.8838235294117647,
+        "role": "batter",
+        "base_price": 95,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 248,
+        "rating": 2.7777777777777777,
+        "role": "all_rounder",
+        "base_price": 80,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 249,
+        "rating": 3.860294117647059,
+        "role": "batter",
+        "base_price": 94,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 250,
+        "rating": 1.6666666666666665,
+        "role": "all_rounder",
+        "base_price": 55,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 251,
+        "rating": 0.29411764705882354,
+        "role": "all_rounder",
+        "base_price": 72,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 252,
+        "rating": 1.3235294117647058,
+        "role": "all_rounder",
+        "base_price": 51,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 253,
+        "rating": 0.0,
+        "role": "all_rounder",
+        "base_price": 66,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 254,
+        "rating": 1.951111111111111,
+        "role": "all_rounder",
+        "base_price": 85,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 255,
+        "rating": 1.9852941176470587,
+        "role": "bowler",
+        "base_price": 75,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 256,
+        "rating": 3.2,
+        "role": "batter",
+        "base_price": 63,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 257,
+        "rating": 2.7777777777777777,
+        "role": "all_rounder",
+        "base_price": 87,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 258,
+        "rating": 2.6647058823529415,
+        "role": "batter",
+        "base_price": 88,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 259,
+        "rating": 1.5191176470588235,
+        "role": "all_rounder",
+        "base_price": 69,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 260,
+        "rating": 3.262222222222222,
+        "role": "bowler",
+        "base_price": 68,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 261,
+        "rating": 1.5441176470588236,
+        "role": "all_rounder",
+        "base_price": 90,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 262,
+        "rating": 2.0277777777777777,
+        "role": "all_rounder",
+        "base_price": 74,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 263,
+        "rating": 5.147058823529411,
+        "role": "all_rounder",
+        "base_price": 67,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 264,
+        "rating": 4.448529411764706,
+        "role": "batter",
+        "base_price": 92,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 265,
+        "rating": 4.0,
+        "role": "all_rounder",
+        "base_price": 51,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 266,
+        "rating": 2.2288888888888887,
+        "role": "bowler",
+        "base_price": 69,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 267,
+        "rating": 4.608823529411764,
+        "role": "batter",
+        "base_price": 88,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 268,
+        "rating": 2.1533333333333333,
+        "role": "bowler",
+        "base_price": 95,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 269,
+        "rating": 3.9455882352941174,
+        "role": "batter",
+        "base_price": 78,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 270,
+        "rating": 3.2222222222222223,
+        "role": "all_rounder",
+        "base_price": 80,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 271,
+        "rating": 2.5,
+        "role": "all_rounder",
+        "base_price": 94,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 272,
+        "rating": 0.9308823529411765,
+        "role": "all_rounder",
+        "base_price": 93,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 273,
+        "rating": 6.654411764705882,
+        "role": "batter",
+        "base_price": 63,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 274,
+        "rating": 1.4338235294117645,
+        "role": "all_rounder",
+        "base_price": 58,
         "current_price": 0,
         "state": 0
     }
