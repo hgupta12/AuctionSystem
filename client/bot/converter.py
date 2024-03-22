@@ -51,6 +51,7 @@ def csv_to_json(file_path: str) -> None:
             state = 0
             player_obj = {
                 "index": None,
+                "name": player['player'],
                 "rating": calculate_rating(player, max_ba, max_bsr),
                 "role": role,
                 "base_price": base_price,
@@ -69,4 +70,4 @@ def csv_to_json(file_path: str) -> None:
     with open('./players.json', 'w') as players_json:
         json.dump(players_data, players_json, indent=4)
 
-csv_to_json('../../data/players.csv')
+csv_to_json('../../data/someplayers.csv')
