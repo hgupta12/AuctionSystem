@@ -139,4 +139,4 @@ class AuctionSimulation():
 sim = AuctionSimulation(num_bots=4, max_bid_iter=1000, training=True, no_train_epochs=10)
 sim.simulate(players_data)
 sim.print_results()
-sim.save_weights()
+#sim.save_weights()
