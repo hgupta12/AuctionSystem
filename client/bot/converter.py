@@ -8,12 +8,13 @@ def calculate_rating(player, max_ba, max_bsr) -> float:
     """
     Finds how valuable the player is to the team
     """
-    batting_weight = 0.6
-    bowling_weight = 0.4
-    batting_rating = float(player['batting_average'])/max_ba
-    bowling_rating = float(player['bowling_strike_rate'])/max_bsr
+    batting_weight = 1
+    bowling_weight = 1
+    batting_rating = float(player['batting_average'])/float(max_ba)
+    bowling_rating = float(player['bowling_strike_rate'])/float(max_bsr)
     # overall_rating = (batting_weight * batting_rating) + (bowling_weight * bowling_rating) #In the range 0-1
-    overall_rating = max(batting_rating, bowling_rating)
+    print(player['batting_average'],player['bowling_strike_rate'], batting_rating, bowling_rating)
+    overall_rating = batting_weight*batting_rating + bowling_weight*bowling_rating
     
     overall_rating *= 10
     
@@ -30,10 +31,11 @@ def csv_to_json(file_path: str) -> None:
     with open(file_path, 'r') as csv_file:
         reader = csv.DictReader(csv_file)
         
-        
         for player in reader:
             max_ba = max(max_ba, float(player['batting_average']))
             max_bsr = max(max_bsr, float(player['bowling_strike_rate']))
+            
+    print(max_ba, max_bsr)
         
     with open(file_path, 'r') as csv_file:
         reader = csv.DictReader(csv_file)
@@ -52,7 +54,7 @@ def csv_to_json(file_path: str) -> None:
             player_obj = {
                 "index": None,
                 "name": player['player'],
-                "rating": calculate_rating(player, max_ba, max_bsr),
+                "rating": min(calculate_rating(player, max_ba, max_bsr),10),
                 "role": role,
                 "base_price": base_price,
                 "current_price": current_price,
