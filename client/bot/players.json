@@ -1,240 +1,285 @@
 [
     {
         "index": 1,
-        "name": "SC Ganguly",
-        "rating": 8.526048786067658,
-        "role": "batter",
-        "base_price": 56,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 2,
-        "name": "V Sehwag",
-        "rating": 7.169921930853041,
-        "role": "batter",
-        "base_price": 59,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 3,
-        "name": "JH Kallis",
-        "rating": 10,
-        "role": "batter",
-        "base_price": 83,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 4,
-        "name": "Harbhajan Singh",
-        "rating": 5.111195630415511,
-        "role": "batter",
-        "base_price": 99,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 5,
-        "name": "P Kumar",
-        "rating": 5.291583974377305,
-        "role": "batter",
-        "base_price": 71,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 6,
-        "name": "MM Patel",
-        "rating": 4.134198861849066,
-        "role": "bowler",
-        "base_price": 88,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 7,
-        "name": "DP Nannes",
-        "rating": 3.49689725185164,
-        "role": "bowler",
-        "base_price": 73,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 8,
-        "name": "SK Trivedi",
-        "rating": 4.185221195916383,
-        "role": "bowler",
-        "base_price": 51,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 9,
-        "name": "KC Sangakkara",
-        "rating": 4.95910663730733,
-        "role": "batter",
-        "base_price": 55,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 10,
-        "name": "DPMD Jayawardene",
-        "rating": 5.523749606794589,
-        "role": "batter",
-        "base_price": 87,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 11,
-        "name": "S Sreesanth",
-        "rating": 8.366913552003204,
-        "role": "bowler",
-        "base_price": 92,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 12,
-        "name": "Z Khan",
-        "rating": 4.559855872344077,
-        "role": "bowler",
-        "base_price": 100,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 13,
-        "name": "DW Steyn",
-        "rating": 3.8394864022419863,
-        "role": "bowler",
-        "base_price": 56,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 14,
-        "name": "PJ Sangwan",
-        "rating": 3.8681003174240045,
-        "role": "bowler",
-        "base_price": 71,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 15,
-        "name": "RV Uthappa",
-        "rating": 4.271783579742057,
-        "role": "batter",
-        "base_price": 81,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 16,
-        "name": "M Muralitharan",
-        "rating": 4.117521233092168,
-        "role": "bowler",
-        "base_price": 81,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 17,
         "name": "SE Marsh",
         "rating": 10.0,
-        "role": "batter",
-        "base_price": 67,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 18,
-        "name": "YK Pathan",
-        "rating": 8.606308444622378,
-        "role": "batter",
-        "base_price": 61,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 19,
-        "name": "IK Pathan",
-        "rating": 6.67654779947954,
-        "role": "batter",
-        "base_price": 94,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 20,
-        "name": "A Mishra",
-        "rating": 4.227418570734079,
-        "role": "batter",
-        "base_price": 57,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 21,
-        "name": "ST Jayasuriya",
-        "rating": 7.423340673167662,
         "role": "batter",
         "base_price": 82,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 22,
-        "name": "RP Singh",
-        "rating": 3.5135291257971346,
+        "index": 2,
+        "name": "DP Nannes",
+        "rating": 3.49689725185164,
         "role": "bowler",
-        "base_price": 86,
+        "base_price": 79,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 23,
-        "name": "DJ Bravo",
-        "rating": 6.4753524550316,
+        "index": 3,
+        "name": "V Kohli",
+        "rating": 10,
         "role": "batter",
-        "base_price": 66,
+        "base_price": 76,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 24,
-        "name": "A Kumble",
-        "rating": 5.151185335582945,
+        "index": 4,
+        "name": "MF Maharoof",
+        "rating": 4.992158769195573,
+        "role": "batter",
+        "base_price": 92,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 5,
+        "name": "MM Patel",
+        "rating": 4.134198861849066,
         "role": "bowler",
         "base_price": 94,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 25,
-        "name": "KD Karthik",
-        "rating": 4.141239383453916,
+        "index": 6,
+        "name": "RG Sharma",
+        "rating": 7.971643455632131,
         "role": "batter",
-        "base_price": 68,
+        "base_price": 54,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 7,
+        "name": "YK Pathan",
+        "rating": 8.606308444622378,
+        "role": "batter",
+        "base_price": 90,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 8,
+        "name": "ST Jayasuriya",
+        "rating": 7.423340673167662,
+        "role": "batter",
+        "base_price": 58,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 9,
+        "name": "DJ Bravo",
+        "rating": 6.4753524550316,
+        "role": "batter",
+        "base_price": 89,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 10,
+        "name": "M Muralitharan",
+        "rating": 4.117521233092168,
+        "role": "bowler",
+        "base_price": 76,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 11,
+        "name": "A Mishra",
+        "rating": 4.227418570734079,
+        "role": "batter",
+        "base_price": 99,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 12,
+        "name": "SR Tendulkar",
+        "rating": 6.129285938974521,
+        "role": "batter",
+        "base_price": 50,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 13,
+        "name": "PJ Sangwan",
+        "rating": 3.8681003174240045,
+        "role": "bowler",
+        "base_price": 92,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 14,
+        "name": "R Dravid",
+        "rating": 4.153821956590123,
+        "role": "batter",
+        "base_price": 70,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 15,
+        "name": "RP Singh",
+        "rating": 3.5135291257971346,
+        "role": "bowler",
+        "base_price": 81,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 16,
+        "name": "HH Gibbs",
+        "rating": 4.219880465555206,
+        "role": "batter",
+        "base_price": 71,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 17,
+        "name": "IK Pathan",
+        "rating": 6.67654779947954,
+        "role": "batter",
+        "base_price": 80,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 18,
+        "name": "SK Warne",
+        "rating": 5.00896794303526,
+        "role": "batter",
+        "base_price": 82,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 19,
+        "name": "L Balaji",
+        "rating": 3.3210271955160287,
+        "role": "bowler",
+        "base_price": 96,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 20,
+        "name": "Z Khan",
+        "rating": 4.559855872344077,
+        "role": "bowler",
+        "base_price": 95,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 21,
+        "name": "GC Smith",
+        "rating": 4.982698961937716,
+        "role": "batter",
+        "base_price": 83,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 22,
+        "name": "A Kumble",
+        "rating": 5.151185335582945,
+        "role": "bowler",
+        "base_price": 93,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 23,
+        "name": "A Symonds",
+        "rating": 9.613686407961337,
+        "role": "batter",
+        "base_price": 100,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 24,
+        "name": "S Sreesanth",
+        "rating": 8.366913552003204,
+        "role": "bowler",
+        "base_price": 50,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 25,
+        "name": "S Badrinath",
+        "rating": 4.385026737967914,
+        "role": "batter",
+        "base_price": 70,
         "current_price": 0,
         "state": 0
     },
     {
         "index": 26,
-        "name": "SL Malinga",
-        "rating": 2.8455832308616196,
-        "role": "bowler",
-        "base_price": 64,
+        "name": "DPMD Jayawardene",
+        "rating": 5.523749606794589,
+        "role": "batter",
+        "base_price": 79,
         "current_price": 0,
         "state": 0
     },
     {
         "index": 27,
+        "name": "G Gambhir",
+        "rating": 4.929223026108839,
+        "role": "batter",
+        "base_price": 99,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 28,
+        "name": "AC Gilchrist",
+        "rating": 4.263919471531929,
+        "role": "batter",
+        "base_price": 92,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 29,
+        "name": "SC Ganguly",
+        "rating": 8.526048786067658,
+        "role": "batter",
+        "base_price": 81,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 30,
+        "name": "RV Uthappa",
+        "rating": 4.271783579742057,
+        "role": "batter",
+        "base_price": 59,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 31,
+        "name": "KC Sangakkara",
+        "rating": 4.95910663730733,
+        "role": "batter",
+        "base_price": 83,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 32,
         "name": "R Vinay Kumar",
         "rating": 4.244685292687809,
         "role": "bowler",
@@ -243,99 +288,54 @@
         "state": 0
     },
     {
-        "index": 28,
-        "name": "JA Morkel",
-        "rating": 7.325785695902085,
-        "role": "batter",
-        "base_price": 50,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 29,
-        "name": "S Badrinath",
-        "rating": 4.385026737967914,
-        "role": "batter",
-        "base_price": 72,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 30,
-        "name": "GC Smith",
-        "rating": 4.982698961937716,
-        "role": "batter",
-        "base_price": 94,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 31,
-        "name": "MF Maharoof",
-        "rating": 4.992158769195573,
-        "role": "batter",
-        "base_price": 94,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 32,
-        "name": "MS Dhoni",
-        "rating": 6.0176156023906895,
-        "role": "batter",
-        "base_price": 62,
-        "current_price": 0,
-        "state": 0
-    },
-    {
         "index": 33,
-        "name": "V Kohli",
+        "name": "JH Kallis",
         "rating": 10,
         "role": "batter",
-        "base_price": 81,
+        "base_price": 51,
         "current_price": 0,
         "state": 0
     },
     {
         "index": 34,
-        "name": "G Gambhir",
-        "rating": 4.929223026108839,
+        "name": "KD Karthik",
+        "rating": 4.141239383453916,
         "role": "batter",
-        "base_price": 69,
+        "base_price": 83,
         "current_price": 0,
         "state": 0
     },
     {
         "index": 35,
-        "name": "PP Ojha",
-        "rating": 2.9427550115816867,
+        "name": "SL Malinga",
+        "rating": 2.8455832308616196,
         "role": "bowler",
-        "base_price": 79,
+        "base_price": 99,
         "current_price": 0,
         "state": 0
     },
     {
         "index": 36,
-        "name": "SK Raina",
-        "rating": 9.12714118218994,
+        "name": "P Kumar",
+        "rating": 5.291583974377305,
         "role": "batter",
-        "base_price": 70,
+        "base_price": 53,
         "current_price": 0,
         "state": 0
     },
     {
         "index": 37,
-        "name": "SK Warne",
-        "rating": 5.00896794303526,
+        "name": "PP Chawla",
+        "rating": 5.267248134061598,
         "role": "batter",
-        "base_price": 65,
+        "base_price": 51,
         "current_price": 0,
         "state": 0
     },
     {
         "index": 38,
-        "name": "R Dravid",
-        "rating": 4.153821956590123,
+        "name": "V Sehwag",
+        "rating": 7.169921930853041,
         "role": "batter",
         "base_price": 89,
         "current_price": 0,
@@ -343,82 +343,82 @@
     },
     {
         "index": 39,
-        "name": "L Balaji",
-        "rating": 3.3210271955160287,
-        "role": "bowler",
-        "base_price": 80,
+        "name": "Harbhajan Singh",
+        "rating": 5.111195630415511,
+        "role": "batter",
+        "base_price": 98,
         "current_price": 0,
         "state": 0
     },
     {
         "index": 40,
-        "name": "A Symonds",
-        "rating": 9.613686407961337,
-        "role": "batter",
-        "base_price": 65,
+        "name": "SK Trivedi",
+        "rating": 4.185221195916383,
+        "role": "bowler",
+        "base_price": 51,
         "current_price": 0,
         "state": 0
     },
     {
         "index": 41,
-        "name": "A Nehra",
-        "rating": 4.842317481197632,
-        "role": "bowler",
-        "base_price": 54,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 42,
-        "name": "PP Chawla",
-        "rating": 5.267248134061598,
-        "role": "batter",
-        "base_price": 59,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 43,
-        "name": "SR Tendulkar",
-        "rating": 6.129285938974521,
-        "role": "batter",
-        "base_price": 85,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 44,
-        "name": "AC Gilchrist",
-        "rating": 4.263919471531929,
-        "role": "batter",
-        "base_price": 73,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 45,
-        "name": "HH Gibbs",
-        "rating": 4.219880465555206,
-        "role": "batter",
-        "base_price": 54,
-        "current_price": 0,
-        "state": 0
-    },
-    {
-        "index": 46,
-        "name": "RG Sharma",
-        "rating": 7.971643455632131,
+        "name": "SK Raina",
+        "rating": 9.12714118218994,
         "role": "batter",
         "base_price": 63,
         "current_price": 0,
         "state": 0
     },
     {
-        "index": 47,
+        "index": 42,
         "name": "ML Hayden",
         "rating": 5.616546083674113,
         "role": "batter",
-        "base_price": 80,
+        "base_price": 52,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 43,
+        "name": "MS Dhoni",
+        "rating": 6.0176156023906895,
+        "role": "batter",
+        "base_price": 95,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 44,
+        "name": "DW Steyn",
+        "rating": 3.8394864022419863,
+        "role": "bowler",
+        "base_price": 82,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 45,
+        "name": "JA Morkel",
+        "rating": 7.325785695902085,
+        "role": "batter",
+        "base_price": 92,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 46,
+        "name": "PP Ojha",
+        "rating": 2.9427550115816867,
+        "role": "bowler",
+        "base_price": 59,
+        "current_price": 0,
+        "state": 0
+    },
+    {
+        "index": 47,
+        "name": "A Nehra",
+        "rating": 4.842317481197632,
+        "role": "bowler",
+        "base_price": 65,
         "current_price": 0,
         "state": 0
     },
@@ -427,7 +427,7 @@
         "name": "Yuvraj Singh",
         "rating": 7.299882753295776,
         "role": "batter",
-        "base_price": 67,
+        "base_price": 83,
         "current_price": 0,
         "state": 0
     }

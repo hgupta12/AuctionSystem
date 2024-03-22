@@ -72,4 +72,4 @@ def csv_to_json(file_path: str) -> None:
     with open('./players.json', 'w') as players_json:
         json.dump(players_data, players_json, indent=4)
 
-csv_to_json('../../data/someplayers.csv')
+csv_to_json('../../data/finalplayers.csv')
