@@ -45,48 +45,51 @@ def episodic_reward_function(team, player, final_price, received):
         else:
             reward += -0.5*team_rating_diff
 
-    #Team size reward - for only bat
-    if abs(len(team.players) - 9) <= 1:
-        reward += 10
-    elif len(team.players) < 8:
-        reward += -2
+    #Team size reward - for only 10 players
+    '''
+    if len(team.players) <= 10:
+        reward += abs(10 - len(team.players))
     else:
-        reward += -20
+        reward += -100
+    '''
 
     #Team size reward - for team w/ bat, bowl, all-round
-    '''
-    if abs(len(team.players) - 21.5) <= 3.5:
-        reward += 10
-    elif len(team.players) < 18:
-        reward += -2
+    if abs(len(team.players) - 15.0) <= 3.0:
+        reward += 50
+    elif len(team.players) < 12:
+        reward += abs(15 - len(team.players))
     else:
-        reward += -20
-    '''
+        reward += -100
+
     #Greeded too hard
     if team.budget < 0:
-        reward += -20
+        reward += -100
 
     #Team composition based reward
-    '''
-    num_bat, num_bowl, num_all = 0
+    num_bat, num_bowl, num_all = 0, 0, 0
     for player in team.players:
         role = player.role
         if role == "bat" : num_bat += 1
         elif role == "bowl" : num_bowl += 1
         if role == "all" : num_all += 1
-    if abs(num_bat - 9) <= 1:
+
+    if abs(num_bat - 5) <= 1:
         reward += 10
     else:
         reward += -2
-    if abs(num_bowl - 9) <= 1:
+    if abs(num_bowl - 5) <= 1:
         reward += 10
     else:
         reward += -2
-    if abs(num_all - 7) <= 2:
+    if abs(num_all - 3) <= 1:
         reward += 10
     else:
-        reward += -2
-    '''
+        if len(team.players) <= 10:
+            reward += -2
+        else:
+            reward += -20
+
+        
         
     return reward
 
@@ -104,23 +107,23 @@ def step_reward_function(team, player, context, action_taken):
     #Potential improvement
     if context == 0:
         if team_rating_diff > 0 and action_taken == 0:
-            reward += -0.5
+            reward += -5.0
         elif team_rating_diff > 0 and action_taken == 1:
-            reward += 0.5
+            reward += 5.0
         elif team_rating_diff < 0 and action_taken == 0:
-            reward += 0.5
+            reward += 5.0
         else:
-            reward += -0.5
+            reward += -5.0
 
     else:
         if team_rating_diff > 0 and action_taken == 0:
-            reward += -0.05#How much you missed out on
+            reward += -0.5#How much you missed out on
         elif team_rating_diff > 0 and action_taken == 1:
-            reward += 0.05 #How much you save
+            reward += 0.5 #How much you save
         elif team_rating_diff < 0 and action_taken == 0:
-            reward += 0.05 
+            reward += 0.5 
         else:
-            reward += -0.05
+            reward += -0.5
 
     #Greeded too hard
     if team.budget < 0:
