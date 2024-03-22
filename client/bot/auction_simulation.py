@@ -126,7 +126,13 @@ class AuctionSimulation():
             
             for player_statement in [f"Player {player.index}: {player.role} rated at {player.rating} initially costing {player.base_price}L bought at {player.final_price}L" for player in bot.team.players]:
                 logger.info(player_statement)
+                
+    def save_weights(self):
+        for i,bot in enumerate(self.bots):
+            bot.save(f"bot_{i}")
+        logger.info("Weights saved")
 
-sim = AuctionSimulation(num_bots=4, max_bid_iter=1000, training=True, no_train_epochs=100)
+sim = AuctionSimulation(num_bots=4, max_bid_iter=1000, training=True, no_train_epochs=10)
 sim.simulate(players_data)
 sim.print_results()
+sim.save_weights()

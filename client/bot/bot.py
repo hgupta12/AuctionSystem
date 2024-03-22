@@ -152,6 +152,9 @@ class SAManager():
         
         self.N = np.ones((no_bidding_ranges, no_team_rating_ranges, no_player_rating_ranges, no_budget_ranges, no_available_actions))
         
+    def save(self, name):
+        np.save('weights/'+name, self.Q)
+        
     def get_state(self, current_bid_price, current_team_rating, current_player_rating, current_budget, action):
         """
         Parameters:
@@ -351,6 +354,9 @@ class Bot():
             oldQ = self._sa_manager.Q[*state_t,action_t]
 
             self._sa_manager.Q[*state_t,action_t] = oldQ + self.alpha * (G - oldQ) / self._sa_manager.N[*state_t,action_t] 
+    
+    def save(self, name='bot_weight'):
+        self._sa_manager.save(name)
     
     def reset(self):
         """
