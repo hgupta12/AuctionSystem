@@ -130,10 +130,10 @@ def step_reward_function(team, player, context, action_taken):
     return reward
 
 class SAManager():
-    def __init__(self, bidding_ranges=[(0,50),(50,100),(100,150),(150,200),(200,250),(250,300),(300,1000)], #This is in L
+    def __init__(self, bidding_ranges=[(0,50),(50,100),(100,150),(150,200),(200,250),(250,300),(300,10000)], #This is in L
                  team_rating_ranges=[i for i in range(11)], 
                  player_rating_ranges=[i for i in range(11)], 
-                 budget_ranges=[(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,10),(10,100)], #This is in cr
+                 budget_ranges=[(0,1),(1,2),(2,3),(3,4),(4,5),(5,6),(6,7),(7,8),(8,9),(9,10),(10,1000)], #This is in cr
                  available_actions=["bid", "not_bid"]):
         
         self.bidding_ranges = bidding_ranges

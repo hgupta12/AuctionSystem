@@ -1,6 +1,7 @@
 from bot import Bot
 import random
 import logging
+import json
 
 '''
 This section is just for testing
@@ -111,7 +112,7 @@ class AuctionSimulation():
                         
                         player_json_data['current_price'] += self.increment_amt
                         
-                        logger.info(f"Player price: {player_json_data['current_price']} with bot {chosen_index} bidding")
+                        logger.info(f"Player price: {player_json_data['current_price']}L with bot {chosen_index} bidding")
                     
                 if self.training and epoch_idx != self.no_train_epochs - 1:
                     for i,bot in enumerate(self.bots):
@@ -126,6 +127,6 @@ class AuctionSimulation():
             for player_statement in [f"Player {player.index}: {player.role} rated at {player.rating} initially costing {player.base_price}L bought at {player.final_price}L" for player in bot.team.players]:
                 logger.info(player_statement)
 
-sim = AuctionSimulation(num_bots=4, max_bid_iter=50, training=True, no_train_epochs=1000)
+sim = AuctionSimulation(num_bots=4, max_bid_iter=1000, training=True, no_train_epochs=100)
 sim.simulate(players_data)
 sim.print_results()
