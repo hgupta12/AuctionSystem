@@ -6,17 +6,20 @@ import json
 '''
 This section is just for testing
 '''
-players_data = [
-    {
-        "index": i + 1,
-        "rating": round(random.uniform(5.0, 10.0), 1),
-        "role": random.choice(["bat", "bowl", "all"]),
-        "base_price": random.randint(50, 150),
-        "current_price": 0,
-        "state": 0,
-    }
-    for i in range(10)
-]
+# players_data = [
+#     {
+#         "index": i + 1,
+#         "rating": round(random.uniform(5.0, 10.0), 1),
+#         "role": random.choice(["bat", "bowl", "all"]),
+#         "base_price": random.randint(50, 150),
+#         "current_price": 0,
+#         "state": 0,
+#     }
+#     for i in range(10)
+# ]
+
+with open('players.json') as f:
+    players_data = json.load(f)
 
 # Ensure that the indices are in increasing order
 players_data.sort(key=lambda x: x["index"])
@@ -25,13 +28,14 @@ players_data.sort(key=lambda x: x["index"])
 for player in players_data:
     player["current_price"] = player["base_price"]
     
+'''
+This section is the actual code
+'''
 logging.basicConfig(format='%(message)s',level=logging.INFO)
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
-'''
-This section is the actual code
-'''
+
 
 class AuctionSimulation():
     def __init__(self, num_bots=4, training=False, initial_budget=20, increment_amt=10, max_bid_iter=None, no_train_epochs=1):
@@ -124,7 +128,7 @@ class AuctionSimulation():
         for bot_no,bot in enumerate(self.bots):
             logger.info(f"\nBot {bot_no}")
             
-            for player_statement in [f"Player {player.index}: {player.role} rated at {player.rating} initially costing {player.base_price}L bought at {player.final_price}L" for player in bot.team.players]:
+            for player_statement in [f"Player {player.index}) {player.name}: {player.role} rated at {player.rating} initially costing {player.base_price}L bought at {player.final_price}L" for player in bot.team.players]:
                 logger.info(player_statement)
                 
     def save_weights(self):

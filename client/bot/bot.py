@@ -246,7 +246,7 @@ class SAManager():
         self.N[*state,action] += 1
 
 class Player():
-    def __init__(self, rating, role, index, base_price=None, final_price=None):
+    def __init__(self, rating, role, index, base_price=None, final_price=None, name=None):
         """
         Parameters:
         rating: The rating of the player
@@ -263,6 +263,9 @@ class Player():
         
         if final_price is not None:
             self.final_price = final_price
+            
+        if name is not None:
+            self.name = name
 
 class Team():
     def __init__(self, initial_budget):
@@ -397,7 +400,7 @@ class Bot():
             #New player introduced
             
             #Add player
-            new_player = Player(player_json_object["rating"], player_json_object["role"], player_json_object["index"])
+            new_player = Player(player_json_object["rating"], player_json_object["role"], player_json_object["index"], name=player_json_object["name"])
             
             #Change the mode of the Bot to running
             self.mode = "running"
@@ -417,7 +420,7 @@ class Bot():
             
         elif player_json_object["state"] == 1:
             #In auction
-            player_obj = Player(player_json_object["rating"], player_json_object["role"], player_json_object["index"])
+            player_obj = Player(player_json_object["rating"], player_json_object["role"], player_json_object["index"], name=player_json_object["name"])
             
             #Get the optimal action
             current_state, optimal_action = self._sa_manager.get_optimal_action(player_json_object["current_price"],
@@ -439,7 +442,7 @@ class Bot():
             
             base_price = player_json_object["base_price"]
             
-            player_obj = Player(player_json_object["rating"], player_json_object["role"], player_json_object["index"],base_price=base_price,final_price=final_price)
+            player_obj = Player(player_json_object["rating"], player_json_object["role"], player_json_object["index"],base_price=base_price,final_price=final_price, name=player_json_object["name"])
             
             current_state, _ = self._sa_manager.get_optimal_action(player_json_object["current_price"],
                                                        self.team.get_team_rating(), 
