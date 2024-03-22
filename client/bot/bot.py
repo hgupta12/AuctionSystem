@@ -54,7 +54,7 @@ def episodic_reward_function(team, player, final_price, received):
     '''
 
     #Team size reward - for team w/ bat, bowl, all-round
-    if abs(len(team.players) - 15.0) <= 3.0:
+    if abs(len(team.players) - 15.0) <= 1.0:
         reward += 50
     elif len(team.players) < 12:
         reward += abs(15 - len(team.players))

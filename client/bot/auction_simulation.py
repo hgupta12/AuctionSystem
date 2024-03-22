@@ -136,7 +136,7 @@ class AuctionSimulation():
             bot.save(f"bot_{i}")
         logger.info("Weights saved")
 
-sim = AuctionSimulation(num_bots=4, max_bid_iter=1000, training=True, no_train_epochs=100)
+sim = AuctionSimulation(num_bots=3, max_bid_iter=1000, training=True, no_train_epochs=100)
 sim.simulate(players_data)
 sim.print_results()
-#sim.save_weights()
+sim.save_weights()
