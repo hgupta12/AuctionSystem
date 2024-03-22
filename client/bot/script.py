@@ -50,7 +50,7 @@ def csv_to_json(file_path: str) -> None:
             current_price = 0
             state = 0
             player_obj = {
-                "index": i + 1,
+                "index": None,
                 "rating": calculate_rating(player, max_ba, max_bsr),
                 "role": role,
                 "base_price": base_price,
@@ -58,6 +58,13 @@ def csv_to_json(file_path: str) -> None:
                 "state": state
             }
             players_data.append(player_obj)
+
+    # shuffle the players in a random order
+    random.shuffle(players_data)
+
+    # give the players ordered indeces
+    for i in range(len(players_data)):
+        players_data[i]["index"] = i+1
 
     with open('./players.json', 'w') as players_json:
         json.dump(players_data, players_json, indent=4)
