@@ -19,7 +19,7 @@ NOTE: Up to the backend not to give the player if enough purse not there
 
 def episodic_reward_function(team, player, final_price, received):
     """
-    This function is supposed to calculate the reward for the given episode.
+    This function is supposed to calculate the reward for the given episode termination.
     It considers the players already in the team. Based on whether the player is received or not, it calculates the reward.
     
     For now, the simple logic is, if you could buy it and you didn't then you get a negative reward, else you get a positive reward.WORK REQUIRED!!!!
@@ -28,26 +28,106 @@ def episodic_reward_function(team, player, final_price, received):
     - Look at batters and bowlers, and see the team balance
     - Classify based on foriegners
     """
-    
+    reward = 0
+
     team_rating_diff = team.get_team_rating() - player.rating
     
+    #Potential improvement
     if not received:
-        if team_rating_diff < 0 and team.budget > final_price:
-            return -0.1*team_rating_diff #How much you missed out on
+        if team_rating_diff > 0 and team.budget > final_price:
+            reward += -0.1*team_rating_diff #How much you missed out on
         else:
-            return 0.1*team_rating_diff #How much you saved
+            reward += 0.1*team_rating_diff #How much you saved
     else:
         if team_rating_diff < 0 and team.budget > final_price:
             #Higher proportion since you had to actually pay
-            return 0.5*team_rating_diff 
+            reward += 0.5*team_rating_diff 
         else:
-            return -0.5*team_rating_diff
+            reward += -0.5*team_rating_diff
+
+    #Team size reward - for only bat
+    if abs(len(team.players) - 9) <= 1:
+        reward += 10
+    elif len(team.players) < 8:
+        reward += -2
+    else:
+        reward += -20
+
+    #Team size reward - for team w/ bat, bowl, all-round
+    '''
+    if abs(len(team.players) - 21.5) <= 3.5:
+        reward += 10
+    elif len(team.players) < 18:
+        reward += -2
+    else:
+        reward += -20
+    '''
+    #Greeded too hard
+    if team.budget < 0:
+        reward += -20
+
+    #Team composition based reward
+    '''
+    num_bat, num_bowl, num_all = 0
+    for player in team.players:
+        role = player.role
+        if role == "bat" : num_bat += 1
+        elif role == "bowl" : num_bowl += 1
+        if role == "all" : num_all += 1
+    if abs(num_bat - 9) <= 1:
+        reward += 10
+    else:
+        reward += -2
+    if abs(num_bowl - 9) <= 1:
+        reward += 10
+    else:
+        reward += -2
+    if abs(num_all - 7) <= 2:
+        reward += 10
+    else:
+        reward += -2
+    '''
         
-def step_reward_function():
+    return reward
+
+
+def step_reward_function(team, player, context, action_taken):
     """
-    This is a filler function, you might want to add somethings to this later on
+    This function is supposed to calculate the reward for the intermediate actions taken, within an episode.
+    Context: whether a player has just entered auction, or already getting bid on.
     """
-    return np.random.rand()/100
+
+    reward = 0
+
+    team_rating_diff = team.get_team_rating() - player.rating
+
+    #Potential improvement
+    if context == 0:
+        if team_rating_diff > 0 and action_taken == 0:
+            reward += -0.5
+        elif team_rating_diff > 0 and action_taken == 1:
+            reward += 0.5
+        elif team_rating_diff < 0 and action_taken == 0:
+            reward += 0.5
+        else:
+            reward += -0.5
+
+    else:
+        if team_rating_diff > 0 and action_taken == 0:
+            reward += -0.05#How much you missed out on
+        elif team_rating_diff > 0 and action_taken == 1:
+            reward += 0.05 #How much you save
+        elif team_rating_diff < 0 and action_taken == 0:
+            reward += 0.05 
+        else:
+            reward += -0.05
+
+    #Greeded too hard
+    if team.budget < 0:
+        reward += -20
+
+    
+    return reward
 
 class SAManager():
     def __init__(self, bidding_ranges=[(0,50),(50,100),(100,150),(150,200),(200,250),(250,300),(300,1000)], #This is in L
@@ -325,7 +405,7 @@ class Bot():
             
             
             
-            self._record_episode_step(current_state, optimal_action, step_reward_function()) #The reward is 0 since that calculation hasn't been done yet CHANGE!!
+            self._record_episode_step(current_state, optimal_action, step_reward_function(self.team, new_player, player_json_object["state"], optimal_action)) #The reward is 0 since that calculation hasn't been done yet CHANGE!!
             
             return optimal_action
             
@@ -343,7 +423,7 @@ class Bot():
             if self.team.budget < player_json_object["current_price"]/100:
                 optimal_action = "not_bid"
             
-            self._record_episode_step(current_state, optimal_action, step_reward_function()) #The reward is 0 since that calculation hasn't been done yet CHANGE!!
+            self._record_episode_step(current_state, optimal_action, step_reward_function(self.team, player_obj, player_json_object["state"], optimal_action)) #The reward is 0 since that calculation hasn't been done yet CHANGE!!
             
             return optimal_action
             
