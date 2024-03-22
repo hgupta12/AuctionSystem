@@ -62,7 +62,7 @@ class AuctionSimulation():
                     interested = [False for _ in range(len(self.bots))]
 
                     for i,bot in enumerate(self.bots):
-                        interested[i] = bot.get_optimal_action(player_json_data) == "bid" and (bot.team.budget*100-5 > player_json_data['current_price']) #Fix the team budget here
+                        interested[i] = bot.get_optimal_action(player_json_data) == "bid" and (bot.team.budget*100-self.increment_amt > player_json_data['current_price']) #Fix the team budget here
                     
                     logger.info(f"Interested: {interested}")
                     
@@ -127,7 +127,7 @@ class AuctionSimulation():
         print("RESULTS")
         for bot_no,bot in enumerate(self.bots):
             logger.info(f"\nBot {bot_no}")
-            logger.info(f"Remaining purse: {min(0,bot.team.budget):.2f}cr")
+            logger.info(f"Remaining purse: {bot.team.budget:.2f}cr")
             for player_statement in [f"Player {player.index}) {player.name}: {player.role} rated at {player.rating} initially costing {player.base_price}L bought at {player.final_price}L" for player in bot.team.players]:
                 logger.info(player_statement)
                 
