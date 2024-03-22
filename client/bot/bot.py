@@ -247,6 +247,9 @@ class SAManager():
         """
         
         self.N[*state,action] += 1
+        
+    def load_weights(self,preloaded_weights_name):
+        self.Q = np.load('weights/'+preloaded_weights_name+'.npy')
 
 class Player():
     def __init__(self, rating, role, index, base_price=None, final_price=None, name=None):
@@ -315,7 +318,7 @@ class Team():
         return sum([player.rating for player in self.players])/len(self.players)
 
 class Bot():
-    def __init__(self, initial_budget):
+    def __init__(self, initial_budget, preloaded_weights_name=None):
         self.mode = "running" # running is for taking it through the auction, training is for between the episodes
         
         self.team = Team(initial_budget)
@@ -323,15 +326,17 @@ class Bot():
         
         self.sar_sequence = []
         
-        self._initialize_state_dict()
+        self._initialize_state_dict(preloaded_weights_name)
         
         #Hyperparameters
         self.alpha = 0.02
         self.gamma = 0.9
         self.epsilon = 0.1
     
-    def _initialize_state_dict(self):
+    def _initialize_state_dict(self, preloaded_weights_name):
         self._sa_manager = SAManager()
+        if preloaded_weights_name is not None:
+            self._sa_manager.load_weights(preloaded_weights_name)
         
     def _record_episode_step(self,state,action,reward):
         action_map = {"bid":0, "not_bid":1}
